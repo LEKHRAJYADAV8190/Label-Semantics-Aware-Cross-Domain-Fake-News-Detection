@@ -5,7 +5,7 @@ M.Tech, Artificial Intelligence and Machine Learning
 
 | Paper | Slides | Main results | Figures |
 |---|---|---|---|
-| [IEEE_LODO_Conference.pdf](paper/IEEE_LODO_Conference.pdf) | [Project_Slides_8.pptx](slides/Project_Slides_8.pptx) | [Table 1](results/analysis/Table_1_InDomain.md), [Table 2](results/analysis/Table_2_LODO.md) | [results/analysis/figures](results/analysis/figures) |
+| [IEEE_LODO_Conference.pdf](paper/IEEE_LODO_Conference.pdf) | [Table 1](results/analysis/Table_1_InDomain.md), [Table 2](results/analysis/Table_2_LODO.md) | [results/analysis/figures](results/analysis/figures) |
 
 ## Abstract
 
