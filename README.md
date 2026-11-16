@@ -3,7 +3,7 @@
 **Lekhraj** and **Shreyash Shrikant Yadav**  
 M.Tech, Artificial Intelligence and Machine Learning
 
-| Paper | Slides | Main results | Figures |
+| Paper | Slides | Main results |
 |---|---|---|---|
 | [IEEE_LODO_Conference.pdf](paper/IEEE_LODO_Conference.pdf) | [Table 1](results/analysis/Table_1_InDomain.md), [Table 2](results/analysis/Table_2_LODO.md) | [results/analysis/figures](results/analysis/figures) |
 
