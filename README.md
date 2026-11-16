@@ -1,6 +1,6 @@
 # Label-Semantics-Aware Cross-Domain Fake News Detection
 
-**Lekhraj** and **Nageshwar Yadav**  
+**Lekhraj** and **Shreyash Shrikant Yadav**  
 M.Tech, Artificial Intelligence and Machine Learning
 
 | Paper | Slides | Main results | Figures |
