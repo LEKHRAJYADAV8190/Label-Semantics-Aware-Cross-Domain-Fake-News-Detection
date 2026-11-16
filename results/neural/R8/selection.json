@@ -1,0 +1,24 @@
+{
+  "method": "Guided",
+  "K": 16,
+  "pool": "target train only",
+  "ids": [
+    "FakeVsSatire:Fake/finalFake:384.txt",
+    "FakeVsSatire:Fake/finalFake:411.txt",
+    "FakeVsSatire:Fake/finalFake:218.txt",
+    "FakeVsSatire:Satire/finalSatire:263.txt",
+    "FakeVsSatire:Fake/finalFake:422.txt",
+    "FakeVsSatire:Fake/finalFake:98.txt",
+    "FakeVsSatire:Fake/finalFake:483.txt",
+    "FakeVsSatire:Fake/finalFake:454.txt",
+    "FakeVsSatire:Satire/finalSatire:460.txt",
+    "FakeVsSatire:Fake/finalFake:399.txt",
+    "FakeVsSatire:Fake/finalFake:343.txt",
+    "FakeVsSatire:Fake/finalFake:83.txt",
+    "FakeVsSatire:Fake/finalFake:398.txt",
+    "FakeVsSatire:Fake/finalFake:373.txt",
+    "FakeVsSatire:Fake/finalFake:382.txt",
+    "FakeVsSatire:Fake/finalFake:195.txt"
+  ],
+  "rule": "highest source-model predictive entropy"
+}

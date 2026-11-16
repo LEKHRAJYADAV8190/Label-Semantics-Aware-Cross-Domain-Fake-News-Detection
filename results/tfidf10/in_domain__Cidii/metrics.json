@@ -1,0 +1,59 @@
+{
+  "run_id": "in_domain__Cidii",
+  "protocol": "in_domain",
+  "target": "Cidii",
+  "sources": [
+    "Cidii"
+  ],
+  "n_train": 431,
+  "n_test": 145,
+  "family": "ten_dataset_extra",
+  "fit_seconds": 0.1833737000124529,
+  "metrics": {
+    "test": {
+      "n": 145,
+      "accuracy": 0.9103448275862069,
+      "macro_f1": 0.9051285922794303,
+      "confusion_matrix": [
+        [
+          83,
+          2
+        ],
+        [
+          11,
+          49
+        ]
+      ],
+      "classification_report": {
+        "0": {
+          "precision": 0.8829787234042553,
+          "recall": 0.9764705882352941,
+          "f1-score": 0.9273743016759777,
+          "support": 85.0
+        },
+        "1": {
+          "precision": 0.9607843137254902,
+          "recall": 0.8166666666666667,
+          "f1-score": 0.8828828828828829,
+          "support": 60.0
+        },
+        "accuracy": 0.9103448275862069,
+        "macro avg": {
+          "precision": 0.9218815185648728,
+          "recall": 0.8965686274509803,
+          "f1-score": 0.9051285922794303,
+          "support": 145.0
+        },
+        "weighted avg": {
+          "precision": 0.9151741400889042,
+          "recall": 0.9103448275862069,
+          "f1-score": 0.908964059416766,
+          "support": 145.0
+        }
+      }
+    }
+  },
+  "train_dataset_counts": {
+    "Cidii": 431
+  }
+}

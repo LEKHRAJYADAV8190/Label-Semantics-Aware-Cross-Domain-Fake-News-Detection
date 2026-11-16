@@ -1,0 +1,13 @@
+{
+  "step": 8,
+  "max_steps": 8,
+  "epoch": 2.0,
+  "logs": {
+    "train_runtime": 0.2014,
+    "train_samples_per_second": 158.872,
+    "train_steps_per_second": 39.718,
+    "total_flos": 1077915254784.0,
+    "train_loss": 1.1216938495635986,
+    "epoch": 2.0
+  }
+}

@@ -1,0 +1,163 @@
+{
+  "run_id": "in_domain__FakeVsSatire",
+  "model": "TF-IDF + LogisticRegression",
+  "protocol": "in_domain",
+  "target": "FakeVsSatire",
+  "sources": [
+    "FakeVsSatire"
+  ],
+  "signature": {
+    "parameters": {
+      "seed": 42,
+      "ngram_range": [
+        1,
+        2
+      ],
+      "min_df": 2,
+      "max_features": 50000,
+      "sublinear_tf": true,
+      "lowercase": true,
+      "C": 1.0,
+      "solver": "liblinear",
+      "max_iter": 1000,
+      "class_weight": null
+    },
+    "processed_sha256": {
+      "ISOT": "b394b17963036936bfb1681edec6ac4953b71f49de28b21f13f938a7f9782b2b",
+      "LIAR_PLUS": "a8532724a2ff0e7e796eb3f066bd140ef3f4446e3dc865ae79bc0e91c3dd816d",
+      "FakeVsSatire": "5220b24f0696b99dddf7b6761736d55d6a798fc7562589076f99f7ad65764a53"
+    },
+    "script_sha256": "cc06507c73341b8ec6659ae1338a9ea334d1daa3b154a9bd26a542542ee412f8",
+    "sklearn_version": "1.6.1"
+  },
+  "completed_utc": "2026-10-06T18:00:06.793397+00:00",
+  "python_version": "3.12.14",
+  "n_train": 334,
+  "train_label_counts": {
+    "1": 193,
+    "0": 141
+  },
+  "train_dataset_counts": {
+    "FakeVsSatire": 334
+  },
+  "vocabulary_size": 21233,
+  "fit_seconds": 0.22306649992242455,
+  "elapsed_seconds": 0.6531996999401599,
+  "model_path": "C:\\ml\\fake-news-30\\results\\tfidf\\in_domain__FakeVsSatire\\model.joblib",
+  "metrics": {
+    "validation": {
+      "n": 71,
+      "accuracy": 0.704225352112676,
+      "macro_f1": 0.6288274831964152,
+      "confusion_matrix": [
+        [
+          9,
+          21
+        ],
+        [
+          0,
+          41
+        ]
+      ],
+      "confusion_matrix_labels": [
+        0,
+        1
+      ],
+      "classification_report": {
+        "0": {
+          "precision": 1.0,
+          "recall": 0.3,
+          "f1-score": 0.46153846153846156,
+          "support": 30.0
+        },
+        "1": {
+          "precision": 0.6612903225806451,
+          "recall": 1.0,
+          "f1-score": 0.7961165048543689,
+          "support": 41.0
+        },
+        "accuracy": 0.704225352112676,
+        "macro avg": {
+          "precision": 0.8306451612903225,
+          "recall": 0.65,
+          "f1-score": 0.6288274831964152,
+          "support": 71.0
+        },
+        "weighted avg": {
+          "precision": 0.8044070876874148,
+          "recall": 0.704225352112676,
+          "f1-score": 0.6547455006363799,
+          "support": 71.0
+        }
+      }
+    },
+    "test": {
+      "n": 73,
+      "accuracy": 0.6712328767123288,
+      "macro_f1": 0.5867924528301887,
+      "confusion_matrix": [
+        [
+          8,
+          23
+        ],
+        [
+          1,
+          41
+        ]
+      ],
+      "confusion_matrix_labels": [
+        0,
+        1
+      ],
+      "classification_report": {
+        "0": {
+          "precision": 0.8888888888888888,
+          "recall": 0.25806451612903225,
+          "f1-score": 0.4,
+          "support": 31.0
+        },
+        "1": {
+          "precision": 0.640625,
+          "recall": 0.9761904761904762,
+          "f1-score": 0.7735849056603774,
+          "support": 42.0
+        },
+        "accuracy": 0.6712328767123288,
+        "macro avg": {
+          "precision": 0.7647569444444444,
+          "recall": 0.6171274961597542,
+          "f1-score": 0.5867924528301887,
+          "support": 73.0
+        },
+        "weighted avg": {
+          "precision": 0.7460521308980214,
+          "recall": 0.6712328767123288,
+          "f1-score": 0.6149392607909021,
+          "support": 73.0
+        }
+      }
+    }
+  },
+  "persistence_prediction_check": "passed",
+  "validation_role": "Report only; fixed hyperparameters, no selection or tuning.",
+  "label_semantics": {
+    "ISOT": {
+      "0": "Real",
+      "1": "Fake"
+    },
+    "LIAR_PLUS": {
+      "0": "half-true/mostly-true/true",
+      "1": "pants-fire/false/barely-true"
+    },
+    "FakeVsSatire": {
+      "0": "Satire",
+      "1": "Fake"
+    }
+  },
+  "leakage_checks": "All processed IDs and normalized exact texts unique globally; vectorizer fit only on train. Near duplicates not ruled out.",
+  "artifact_sha256": {
+    "model.joblib": "89d24c00dc7455d2b3f494cf5a0b8a5f874bcfa2b5d47da538bb769cdcdd465e",
+    "validation_predictions.csv": "7e2f793eb55b18f56439446d5fabb49940ad58be1ea61d9770d6355f53d446e8",
+    "test_predictions.csv": "8ba231b404000ac62f888500c45e348600953b10e251d9e5d8aff3fc4ccbbfe4"
+  }
+}

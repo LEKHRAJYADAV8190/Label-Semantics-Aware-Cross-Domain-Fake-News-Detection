@@ -1,0 +1,502 @@
+{
+  "checked_utc": "2026-10-06T18:46:26.785554+00:00",
+  "status": "PASS",
+  "processed_sha256": {
+    "ISOT": "b394b17963036936bfb1681edec6ac4953b71f49de28b21f13f938a7f9782b2b",
+    "LIAR_PLUS": "a8532724a2ff0e7e796eb3f066bd140ef3f4446e3dc865ae79bc0e91c3dd816d",
+    "FakeVsSatire": "5220b24f0696b99dddf7b6761736d55d6a798fc7562589076f99f7ad65764a53"
+  },
+  "runs": [
+    {
+      "family": "tfidf",
+      "run_id": "in_domain__ISOT",
+      "status": "PASS",
+      "n_train_verified": 4200,
+      "validation": {
+        "n": 900,
+        "accuracy": 0.9644444444444444,
+        "macro_f1": 0.964444268860587,
+        "confusion_matrix": [
+          [
+            435,
+            15
+          ],
+          [
+            17,
+            433
+          ]
+        ],
+        "predictions_sha256": "024aff6ae9bcefebdde666c58ac8678d0e5aade20ad78fb82cd19c1d22291628"
+      },
+      "test": {
+        "n": 900,
+        "accuracy": 0.9677777777777777,
+        "macro_f1": 0.9677729636155525,
+        "confusion_matrix": [
+          [
+            441,
+            9
+          ],
+          [
+            20,
+            430
+          ]
+        ],
+        "predictions_sha256": "009e2dc8933dd23b18ed2f02172427b34b5e97a60a9a633211fc2464e93ec606"
+      }
+    },
+    {
+      "family": "tfidf",
+      "run_id": "in_domain__LIAR_PLUS",
+      "status": "PASS",
+      "n_train_verified": 10208,
+      "validation": {
+        "n": 1284,
+        "accuracy": 0.6269470404984424,
+        "macro_f1": 0.6161856579160038,
+        "confusion_matrix": [
+          [
+            510,
+            158
+          ],
+          [
+            321,
+            295
+          ]
+        ],
+        "predictions_sha256": "d9f3eb4d9942cfe5ec0ccb303e8fa10ae18abb537e487c7978af136232030111"
+      },
+      "test": {
+        "n": 1267,
+        "accuracy": 0.6195737963693765,
+        "macro_f1": 0.5920678562076834,
+        "confusion_matrix": [
+          [
+            557,
+            157
+          ],
+          [
+            325,
+            228
+          ]
+        ],
+        "predictions_sha256": "9f42e7a73fe66e5c74cae87fa4c318ca2484fbbb1ba5cec41b703a827c674af2"
+      }
+    },
+    {
+      "family": "tfidf",
+      "run_id": "in_domain__FakeVsSatire",
+      "status": "PASS",
+      "n_train_verified": 334,
+      "validation": {
+        "n": 71,
+        "accuracy": 0.704225352112676,
+        "macro_f1": 0.6288274831964152,
+        "confusion_matrix": [
+          [
+            9,
+            21
+          ],
+          [
+            0,
+            41
+          ]
+        ],
+        "predictions_sha256": "7e2f793eb55b18f56439446d5fabb49940ad58be1ea61d9770d6355f53d446e8"
+      },
+      "test": {
+        "n": 73,
+        "accuracy": 0.6712328767123288,
+        "macro_f1": 0.5867924528301887,
+        "confusion_matrix": [
+          [
+            8,
+            23
+          ],
+          [
+            1,
+            41
+          ]
+        ],
+        "predictions_sha256": "8ba231b404000ac62f888500c45e348600953b10e251d9e5d8aff3fc4ccbbfe4"
+      }
+    },
+    {
+      "family": "tfidf",
+      "run_id": "lodo__ISOT",
+      "status": "PASS",
+      "n_train_verified": 10542,
+      "validation": {
+        "n": 1355,
+        "accuracy": 0.6287822878228783,
+        "macro_f1": 0.6218084985370407,
+        "confusion_matrix": [
+          [
+            518,
+            180
+          ],
+          [
+            323,
+            334
+          ]
+        ],
+        "predictions_sha256": "717053c490e2c0a348d2d52e1c6b137e22d8832554dd847a25797b21eb23aa15"
+      },
+      "test": {
+        "n": 900,
+        "accuracy": 0.5988888888888889,
+        "macro_f1": 0.5970377499600015,
+        "confusion_matrix": [
+          [
+            300,
+            150
+          ],
+          [
+            211,
+            239
+          ]
+        ],
+        "predictions_sha256": "e48e8841adf87d93ec81864cc49120e2e83117e5e33f17222db04a053c18556e"
+      }
+    },
+    {
+      "family": "tfidf",
+      "run_id": "lodo__LIAR_PLUS",
+      "status": "PASS",
+      "n_train_verified": 4534,
+      "validation": {
+        "n": 971,
+        "accuracy": 0.9443872296601442,
+        "macro_f1": 0.9443375796178344,
+        "confusion_matrix": [
+          [
+            444,
+            36
+          ],
+          [
+            18,
+            473
+          ]
+        ],
+        "predictions_sha256": "a2ecb67d8e7aa01f078e0cdc72fd44d2e22ec1a769b095ef7d3a8d70e1fcfa26"
+      },
+      "test": {
+        "n": 1267,
+        "accuracy": 0.5438042620363063,
+        "macro_f1": 0.5320265731477268,
+        "confusion_matrix": [
+          [
+            445,
+            269
+          ],
+          [
+            309,
+            244
+          ]
+        ],
+        "predictions_sha256": "3e135965492fc89b96dd4ad8daae8db3cef85f58dfe84aaa0b89b369664cdb5f"
+      }
+    },
+    {
+      "family": "tfidf",
+      "run_id": "lodo__FakeVsSatire",
+      "status": "PASS",
+      "n_train_verified": 14408,
+      "validation": {
+        "n": 2184,
+        "accuracy": 0.7765567765567766,
+        "macro_f1": 0.7744716400931406,
+        "confusion_matrix": [
+          [
+            953,
+            165
+          ],
+          [
+            323,
+            743
+          ]
+        ],
+        "predictions_sha256": "5c5e60da9fc2b2f6cf53e012e9db7d9b917e759b92e5df2cfb08ec3b3f961257"
+      },
+      "test": {
+        "n": 73,
+        "accuracy": 0.5753424657534246,
+        "macro_f1": 0.39313488871010993,
+        "confusion_matrix": [
+          [
+            1,
+            30
+          ],
+          [
+            1,
+            41
+          ]
+        ],
+        "predictions_sha256": "155efde820439fad47c016f4c7d08890d93832acd118702f4f8eb34c64d2db00"
+      }
+    },
+    {
+      "family": "neural",
+      "run_id": "R1",
+      "status": "PASS",
+      "n_train_verified": 4200,
+      "test": {
+        "n": 900,
+        "accuracy": 0.9888888888888889,
+        "macro_f1": 0.9888888888888889,
+        "confusion_matrix": [
+          [
+            445,
+            5
+          ],
+          [
+            5,
+            445
+          ]
+        ],
+        "predictions_sha256": "688a80205603c81e9e301c80adeb9e8261e9022a68f184ffcbba968dd0efa9d7"
+      }
+    },
+    {
+      "family": "neural",
+      "run_id": "R2",
+      "status": "PASS",
+      "n_train_verified": 10208,
+      "test": {
+        "n": 1267,
+        "accuracy": 0.6424625098658248,
+        "macro_f1": 0.623827391505245,
+        "confusion_matrix": [
+          [
+            548,
+            166
+          ],
+          [
+            287,
+            266
+          ]
+        ],
+        "predictions_sha256": "13d62232c93137e8dae3a7099164b1047f24b3170474201d6843435a1978a4c9"
+      }
+    },
+    {
+      "family": "neural",
+      "run_id": "R3",
+      "status": "PASS",
+      "n_train_verified": 334,
+      "test": {
+        "n": 73,
+        "accuracy": 0.7534246575342466,
+        "macro_f1": 0.7311783960720131,
+        "confusion_matrix": [
+          [
+            17,
+            14
+          ],
+          [
+            4,
+            38
+          ]
+        ],
+        "predictions_sha256": "7d5dd72c1528a70bf499a9c9f961da73e605c40e718d7e2cff2477d120df115b"
+      }
+    },
+    {
+      "family": "neural",
+      "run_id": "R4",
+      "status": "PASS",
+      "n_train_verified": 10542,
+      "test": {
+        "n": 900,
+        "accuracy": 0.6188888888888889,
+        "macro_f1": 0.5867464347341831,
+        "confusion_matrix": [
+          [
+            153,
+            297
+          ],
+          [
+            46,
+            404
+          ]
+        ],
+        "predictions_sha256": "a6e4788871bbbb7e6038c078f0d4d3fac58652fb35843b65859741734ca88ab5"
+      }
+    },
+    {
+      "family": "neural",
+      "run_id": "R5",
+      "status": "PASS",
+      "n_train_verified": 4534,
+      "test": {
+        "n": 1267,
+        "accuracy": 0.4538279400157853,
+        "macro_f1": 0.3777579060920911,
+        "confusion_matrix": [
+          [
+            66,
+            648
+          ],
+          [
+            44,
+            509
+          ]
+        ],
+        "predictions_sha256": "cbf7b5b423b2c070e2897c4c5f28a71122a639ac75d4782b803b02e2d3061534"
+      }
+    },
+    {
+      "family": "neural",
+      "run_id": "R6",
+      "status": "PASS",
+      "n_train_verified": 14408,
+      "test": {
+        "n": 73,
+        "accuracy": 0.4246575342465753,
+        "macro_f1": 0.3916666666666667,
+        "confusion_matrix": [
+          [
+            24,
+            7
+          ],
+          [
+            35,
+            7
+          ]
+        ],
+        "predictions_sha256": "4b63ca6b84000291bea0f8966883a2d9b4b4b676374fa1375235e74dd02af640"
+      }
+    },
+    {
+      "family": "neural",
+      "run_id": "R7",
+      "status": "PASS",
+      "selection": {
+        "unique_target_train_ids": 16,
+        "method": "Guided",
+        "label_counts": {
+          "0": 13,
+          "1": 3
+        }
+      },
+      "n_train_verified": 16,
+      "test": {
+        "n": 1267,
+        "accuracy": 0.4546172059984215,
+        "macro_f1": 0.38135858501278624,
+        "confusion_matrix": [
+          [
+            70,
+            644
+          ],
+          [
+            47,
+            506
+          ]
+        ],
+        "predictions_sha256": "6d202f5a57782aa03dedd157e33d78da0bba0da1ff3de4247541bc2f0d227418"
+      }
+    },
+    {
+      "family": "neural",
+      "run_id": "R8",
+      "status": "PASS",
+      "selection": {
+        "unique_target_train_ids": 16,
+        "method": "Guided",
+        "label_counts": {
+          "1": 14,
+          "0": 2
+        }
+      },
+      "n_train_verified": 16,
+      "test": {
+        "n": 73,
+        "accuracy": 0.4246575342465753,
+        "macro_f1": 0.3916666666666667,
+        "confusion_matrix": [
+          [
+            24,
+            7
+          ],
+          [
+            35,
+            7
+          ]
+        ],
+        "predictions_sha256": "054eb2310d517607cd465fb92e77a0d9d1e87cb199d11fcbd476903ca2cef79c"
+      }
+    },
+    {
+      "family": "neural",
+      "run_id": "R9",
+      "status": "PASS",
+      "selection": {
+        "unique_target_train_ids": 16,
+        "method": "Random",
+        "label_counts": {
+          "1": 8,
+          "0": 8
+        }
+      },
+      "n_train_verified": 16,
+      "test": {
+        "n": 1267,
+        "accuracy": 0.4530386740331492,
+        "macro_f1": 0.3780280217526665,
+        "confusion_matrix": [
+          [
+            67,
+            647
+          ],
+          [
+            46,
+            507
+          ]
+        ],
+        "predictions_sha256": "1ff047e164ddfb9375c4fbb3bd34eef5d81c21d5ba3521432360e9e4921efd16"
+      }
+    },
+    {
+      "family": "neural",
+      "run_id": "R10",
+      "status": "PASS",
+      "selection": {
+        "unique_target_train_ids": 16,
+        "method": "Random",
+        "label_counts": {
+          "1": 7,
+          "0": 9
+        }
+      },
+      "n_train_verified": 16,
+      "test": {
+        "n": 73,
+        "accuracy": 0.4246575342465753,
+        "macro_f1": 0.3916666666666667,
+        "confusion_matrix": [
+          [
+            24,
+            7
+          ],
+          [
+            35,
+            7
+          ]
+        ],
+        "predictions_sha256": "a9fafb0d945d014000f744203d9c22c8c7308244b7c84e43f7907c664723e1b6"
+      }
+    }
+  ],
+  "failures": [],
+  "limitations": [
+    "Verifies saved metrics and split membership, not fresh model inference.",
+    "Training counts are verified against manifests and source data; actual optimizer history is not replayed.",
+    "Guided selection IDs are checked for pool membership; entropy ranking is not recomputed.",
+    "Near-duplicate and semantic leakage are not ruled out."
+  ],
+  "raw_hashes_verified": 491,
+  "original_artifacts_unchanged": true,
+  "test_runs_passed": 16,
+  "test_runs_expected": 16
+}

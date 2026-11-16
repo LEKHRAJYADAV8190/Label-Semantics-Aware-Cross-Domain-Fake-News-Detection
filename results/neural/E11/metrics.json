@@ -1,0 +1,58 @@
+{
+  "run_id": "E11",
+  "family": "improvement_extra",
+  "accuracy": 0.5272296764009471,
+  "macro_f1": 0.5259433093077599,
+  "classification_report": {
+    "Real": {
+      "precision": 0.592891760904685,
+      "recall": 0.5140056022408963,
+      "f1-score": 0.5506376594148538,
+      "support": 714.0
+    },
+    "Fake": {
+      "precision": 0.4645061728395062,
+      "recall": 0.5443037974683544,
+      "f1-score": 0.5012489592006661,
+      "support": 553.0
+    },
+    "accuracy": 0.5272296764009471,
+    "macro avg": {
+      "precision": 0.5286989668720956,
+      "recall": 0.5291546998546254,
+      "f1-score": 0.5259433093077599,
+      "support": 1267.0
+    },
+    "weighted avg": {
+      "precision": 0.5368560622464025,
+      "recall": 0.5272296764009471,
+      "f1-score": 0.5290812653987166,
+      "support": 1267.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      367,
+      347
+    ],
+    [
+      252,
+      301
+    ]
+  ],
+  "n_test": 1267,
+  "target": "LIAR_PLUS",
+  "sources": [
+    "E9"
+  ],
+  "method": "LoRA-Random-K128-balanced",
+  "K": 128,
+  "n_train": 128,
+  "epochs": 10,
+  "lr": 0.0002,
+  "lora_rank": 16,
+  "checkpoint": "C:\\ml\\fake-news-30\\checkpoints\\E11\\final",
+  "train_seconds": 7.05603319988586,
+  "baseline_run": "E9",
+  "max_len": 128
+}

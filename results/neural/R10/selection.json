@@ -1,0 +1,24 @@
+{
+  "method": "Random",
+  "K": 16,
+  "pool": "target train only",
+  "ids": [
+    "FakeVsSatire:Fake/finalFake:47.txt",
+    "FakeVsSatire:Fake/finalFake:172.txt",
+    "FakeVsSatire:Fake/finalFake:177.txt",
+    "FakeVsSatire:Satire/finalSatire:309.txt",
+    "FakeVsSatire:Satire/finalSatire:278.txt",
+    "FakeVsSatire:Satire/finalSatire:181.txt",
+    "FakeVsSatire:Fake/finalFake:60.txt",
+    "FakeVsSatire:Satire/finalSatire:346.txt",
+    "FakeVsSatire:Satire/finalSatire:366.txt",
+    "FakeVsSatire:Satire/finalSatire:301.txt",
+    "FakeVsSatire:Fake/finalFake:468.txt",
+    "FakeVsSatire:Fake/finalFake:171.txt",
+    "FakeVsSatire:Satire/finalSatire:439.txt",
+    "FakeVsSatire:Satire/finalSatire:566.txt",
+    "FakeVsSatire:Satire/finalSatire:33.txt",
+    "FakeVsSatire:Fake/finalFake:27.txt"
+  ],
+  "rule": "uniform random without replacement"
+}

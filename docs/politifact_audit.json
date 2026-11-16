@@ -1,0 +1,29 @@
+{
+  "dataset": "Politifact",
+  "rows": 950,
+  "splits": {
+    "train": {
+      "0": 325,
+      "1": 245
+    },
+    "val": {
+      "0": 108,
+      "1": 82
+    },
+    "test": {
+      "0": 108,
+      "1": 82
+    }
+  },
+  "fake": 409,
+  "real": 541,
+  "output_sha256": "9542f4c0e2138ef8eb9f7ad5096acf40cb3cbb73cf65efbe13a466003be33843",
+  "excluded": {
+    "too_short": 23,
+    "duplicate_text": 79,
+    "conflicting_text_labels": 4
+  },
+  "source": "KaiDMML/FakeNewsNet politifact_fake/real + URL fetch fallback to title",
+  "n_with_fetched_body_approx": 378,
+  "limitation": "Dead URLs fall back to headline text, unlike the paper crawl date."
+}

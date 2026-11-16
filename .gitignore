@@ -1,0 +1,8 @@
+# Trained weights are larger than GitHub's file limit.
+checkpoints/
+# Cached embedding matrices used only by an optional distance check.
+results/analysis/embeddings/
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/

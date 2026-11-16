@@ -1,0 +1,126 @@
+{
+  "locked_untouched": [
+    "FakeVsSatire",
+    "ISOT",
+    "LIAR_PLUS"
+  ],
+  "datasets": {
+    "celebrity": {
+      "dataset": "Celebrity",
+      "rows": 500,
+      "splits": {
+        "train": {
+          "0": 150,
+          "1": 150
+        },
+        "val": {
+          "0": 50,
+          "1": 50
+        },
+        "test": {
+          "0": 50,
+          "1": 50
+        }
+      },
+      "fake": 250,
+      "real": 250,
+      "output_sha256": "800c810bdd3ecde2325160000a2d3e9760ea4e310c5ba81f6796d7b8774f0ca2",
+      "excluded": {},
+      "source": "Perez-Rosas UMich fakeNewsDatasets.zip celebrityDataset",
+      "mapping": {
+        "fake": 1,
+        "legit": 0
+      }
+    },
+    "fakes": {
+      "status": "failed",
+      "error": "Object of type set is not JSON serializable"
+    },
+    "horne": {
+      "status": "failed",
+      "error": "Object of type set is not JSON serializable"
+    },
+    "infodemic": {
+      "dataset": "Infodemic",
+      "rows": 10697,
+      "splits": "official train/val/labeled-test",
+      "fake": 5098,
+      "real": 5599,
+      "output_sha256": "4bbb9300e74d11c974d2b4466d8a8a480bbd85e642ed791cecb1cb1d9ea90435",
+      "excluded": {
+        "duplicate_text": 3
+      },
+      "source": "CONSTRAINT 2021 English (diptamath/covid_fake_news)",
+      "mapping": {
+        "fake": 1,
+        "real": 0
+      }
+    },
+    "politifact": {
+      "dataset": "Politifact",
+      "rows": 950,
+      "splits": {
+        "train": {
+          "0": 325,
+          "1": 245
+        },
+        "val": {
+          "0": 108,
+          "1": 82
+        },
+        "test": {
+          "0": 108,
+          "1": 82
+        }
+      },
+      "fake": 409,
+      "real": 541,
+      "output_sha256": "9542f4c0e2138ef8eb9f7ad5096acf40cb3cbb73cf65efbe13a466003be33843",
+      "excluded": {
+        "too_short": 23,
+        "duplicate_text": 79,
+        "conflicting_text_labels": 4
+      },
+      "source": "KaiDMML/FakeNewsNet politifact_fake/real + URL fetch fallback to title",
+      "n_with_fetched_body_approx": 378,
+      "limitation": "Dead URLs fall back to headline text, unlike the paper crawl date."
+    },
+    "ndf": {
+      "dataset": "NDF",
+      "rows": 349,
+      "splits": {
+        "train": {
+          "0": 140,
+          "1": 70
+        },
+        "val": {
+          "0": 47,
+          "1": 23
+        },
+        "test": {
+          "0": 46,
+          "1": 23
+        }
+      },
+      "fake": 116,
+      "real": 233,
+      "output_sha256": "a816f939c43c989eb15e99522edb2169a5278558833ba4adbf16c6caaaef1a03",
+      "excluded": {
+        "fetch_failed_or_too_short": 144,
+        "invalid_ic_label": 14,
+        "conflicting_text_labels": 60,
+        "duplicate_text": 1
+      },
+      "source": "Unipisa/NDFDataset IC variant + live URL fetch",
+      "mapping": {
+        "IC Fake": 1,
+        "IC Real": 0
+      },
+      "limitation": "Official repo has URLs only; tweets/articles that 404 are dropped."
+    },
+    "cidii": {
+      "dataset": "Cidii",
+      "status": "missing_kaggle"
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "run_id": "E3",
+  "family": "improvement_extra",
+  "accuracy": 0.4520547945205479,
+  "macro_f1": 0.43410852713178294,
+  "classification_report": {
+    "Real": {
+      "precision": 0.41818181818181815,
+      "recall": 0.7419354838709677,
+      "f1-score": 0.5348837209302325,
+      "support": 31.0
+    },
+    "Fake": {
+      "precision": 0.5555555555555556,
+      "recall": 0.23809523809523808,
+      "f1-score": 0.3333333333333333,
+      "support": 42.0
+    },
+    "accuracy": 0.4520547945205479,
+    "macro avg": {
+      "precision": 0.4868686868686869,
+      "recall": 0.49001536098310294,
+      "f1-score": 0.43410852713178294,
+      "support": 73.0
+    },
+    "weighted avg": {
+      "precision": 0.49721876297218764,
+      "recall": 0.4520547945205479,
+      "f1-score": 0.4189232239566741,
+      "support": 73.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      23,
+      8
+    ],
+    [
+      32,
+      10
+    ]
+  ],
+  "n_test": 73,
+  "target": "FakeVsSatire",
+  "sources": [
+    "R6"
+  ],
+  "method": "LoRA-Guided-K64-balanced",
+  "K": 64,
+  "n_train": 64,
+  "epochs": 10,
+  "lr": 0.0002,
+  "lora_rank": 16,
+  "checkpoint": "C:\\ml\\fake-news-30\\checkpoints\\E3\\final",
+  "train_seconds": 3.4051454999716952,
+  "baseline_run": "R6",
+  "max_len": 128
+}

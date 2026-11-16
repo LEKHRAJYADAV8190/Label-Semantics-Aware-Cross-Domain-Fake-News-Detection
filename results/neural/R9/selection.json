@@ -1,0 +1,24 @@
+{
+  "method": "Random",
+  "K": 16,
+  "pool": "target train only",
+  "ids": [
+    "LIAR_PLUS:4081.json",
+    "LIAR_PLUS:10727.json",
+    "LIAR_PLUS:9479.json",
+    "LIAR_PLUS:7362.json",
+    "LIAR_PLUS:2483.json",
+    "LIAR_PLUS:436.json",
+    "LIAR_PLUS:10317.json",
+    "LIAR_PLUS:11575.json",
+    "LIAR_PLUS:11594.json",
+    "LIAR_PLUS:12721.json",
+    "LIAR_PLUS:10652.json",
+    "LIAR_PLUS:12946.json",
+    "LIAR_PLUS:6199.json",
+    "LIAR_PLUS:9715.json",
+    "LIAR_PLUS:4911.json",
+    "LIAR_PLUS:3280.json"
+  ],
+  "rule": "uniform random without replacement"
+}

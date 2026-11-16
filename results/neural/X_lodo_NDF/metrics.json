@@ -1,0 +1,62 @@
+{
+  "run_id": "X_lodo_NDF",
+  "family": "ten_dataset_extra",
+  "accuracy": 0.6666666666666666,
+  "macro_f1": 0.5753278030505753,
+  "classification_report": {
+    "Real": {
+      "precision": 0.7090909090909091,
+      "recall": 0.8478260869565217,
+      "f1-score": 0.7722772277227723,
+      "support": 46.0
+    },
+    "Fake": {
+      "precision": 0.5,
+      "recall": 0.30434782608695654,
+      "f1-score": 0.3783783783783784,
+      "support": 23.0
+    },
+    "accuracy": 0.6666666666666666,
+    "macro avg": {
+      "precision": 0.6045454545454545,
+      "recall": 0.5760869565217391,
+      "f1-score": 0.5753278030505753,
+      "support": 69.0
+    },
+    "weighted avg": {
+      "precision": 0.6393939393939394,
+      "recall": 0.6666666666666666,
+      "f1-score": 0.6409776112746409,
+      "support": 69.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      39,
+      7
+    ],
+    [
+      16,
+      7
+    ]
+  ],
+  "n_test": 69,
+  "target": "NDF",
+  "sources": [
+    "ISOT",
+    "LIAR_PLUS",
+    "FakeVsSatire",
+    "Celebrity",
+    "Cidii",
+    "Fakes",
+    "Horne",
+    "Infodemic",
+    "Politifact"
+  ],
+  "phase": "lodo_9source",
+  "method": "DistilBERT",
+  "n_train": 23125,
+  "n_val": 5050,
+  "train_seconds": 853.2012030000333,
+  "checkpoint": "C:\\ml\\fake-news-30\\checkpoints\\X_lodo_NDF\\final"
+}

@@ -1,0 +1,4 @@
+id,reason,kept_id
+Infodemic:train:3242,duplicate_text,Infodemic:test:132
+Infodemic:train:4178,duplicate_text,Infodemic:test:1829
+Infodemic:train:5459,duplicate_text,Infodemic:val:910

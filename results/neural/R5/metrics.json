@@ -1,0 +1,73 @@
+{
+  "run_id": "R5",
+  "target": "LIAR_PLUS",
+  "sources": [
+    "ISOT",
+    "FakeVsSatire"
+  ],
+  "method": "DistilBERT",
+  "K": null,
+  "n_train": 4534,
+  "n_test": 1267,
+  "accuracy": 0.4538279400157853,
+  "macro_f1": 0.3777579060920911,
+  "classification_report": {
+    "Real": {
+      "precision": 0.6,
+      "recall": 0.09243697478991597,
+      "f1-score": 0.16019417475728157,
+      "support": 714.0
+    },
+    "Fake": {
+      "precision": 0.4399308556611927,
+      "recall": 0.9204339963833634,
+      "f1-score": 0.5953216374269006,
+      "support": 553.0
+    },
+    "accuracy": 0.4538279400157853,
+    "macro avg": {
+      "precision": 0.5199654278305963,
+      "recall": 0.5064354855866398,
+      "f1-score": 0.3777579060920911,
+      "support": 1267.0
+    },
+    "weighted avg": {
+      "precision": 0.5301355668355482,
+      "recall": 0.4538279400157853,
+      "f1-score": 0.35011168608822024,
+      "support": 1267.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      66,
+      648
+    ],
+    [
+      44,
+      509
+    ]
+  ],
+  "checkpoint": "C:\\ml\\fake-news-30\\checkpoints\\R5\\final",
+  "train_seconds_this_invocation": 138.76103299995884,
+  "best_checkpoint": "C:\\ml\\fake-news-30\\checkpoints\\R5\\checkpoint-2250",
+  "resumed_from": null,
+  "signature": {
+    "data_sha256": {
+      "ISOT": "b394b17963036936bfb1681edec6ac4953b71f49de28b21f13f938a7f9782b2b",
+      "LIAR_PLUS": "a8532724a2ff0e7e796eb3f066bd140ef3f4446e3dc865ae79bc0e91c3dd816d",
+      "FakeVsSatire": "5220b24f0696b99dddf7b6761736d55d6a798fc7562589076f99f7ad65764a53"
+    },
+    "batch": 4,
+    "max_len": 128,
+    "epochs": 2,
+    "seed": 42,
+    "lr": 2e-05,
+    "adaptation": null,
+    "sources": [
+      "ISOT",
+      "FakeVsSatire"
+    ],
+    "target": "LIAR_PLUS"
+  }
+}

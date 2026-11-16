@@ -1,0 +1,13 @@
+{
+  "gpu": "NVIDIA GeForce RTX 4050 Laptop GPU",
+  "torch": "2.7.1+cu126",
+  "offline": true,
+  "resume_from_step": 10,
+  "finished_step": 20,
+  "resume_segment_seconds_including_load_and_save": 1.9012225000187755,
+  "peak_allocated_gib": 1.2725787162780762,
+  "batch_size": 4,
+  "max_len": 128,
+  "fp16": true,
+  "note": "Smoke data only, not a scored experiment. Segment time includes checkpoint I/O."
+}

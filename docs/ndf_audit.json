@@ -1,0 +1,33 @@
+{
+  "dataset": "NDF",
+  "rows": 349,
+  "splits": {
+    "train": {
+      "0": 140,
+      "1": 70
+    },
+    "val": {
+      "0": 47,
+      "1": 23
+    },
+    "test": {
+      "0": 46,
+      "1": 23
+    }
+  },
+  "fake": 116,
+  "real": 233,
+  "output_sha256": "a816f939c43c989eb15e99522edb2169a5278558833ba4adbf16c6caaaef1a03",
+  "excluded": {
+    "fetch_failed_or_too_short": 144,
+    "invalid_ic_label": 14,
+    "conflicting_text_labels": 60,
+    "duplicate_text": 1
+  },
+  "source": "Unipisa/NDFDataset IC variant + live URL fetch",
+  "mapping": {
+    "IC Fake": 1,
+    "IC Real": 0
+  },
+  "limitation": "Official repo has URLs only; tweets/articles that 404 are dropped."
+}

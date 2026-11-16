@@ -1,0 +1,100 @@
+[
+  {
+    "run_id": "R4 locked",
+    "target": "ISOT",
+    "method": "LODO DistilBERT 2ep",
+    "accuracy": 0.6188888888888889,
+    "macro_f1": 0.5867464347341831
+  },
+  {
+    "run_id": "E5 extra",
+    "target": "ISOT",
+    "method": "DistilBERT-class-weighted",
+    "accuracy": 0.6344444444444445,
+    "macro_f1": 0.6265319945159106
+  },
+  {
+    "run_id": "E8 extra",
+    "target": "ISOT",
+    "method": "weighted 4ep max_len256",
+    "accuracy": 0.5622222222222222,
+    "macro_f1": 0.5621443812233287
+  },
+  {
+    "run_id": "E13 extra",
+    "target": "ISOT",
+    "method": "LoRA-Random-K64-balanced",
+    "accuracy": 0.8777777777777778,
+    "macro_f1": 0.8777047025630129
+  },
+  {
+    "run_id": "R5 locked",
+    "target": "LIAR_PLUS",
+    "method": "LODO DistilBERT 2ep",
+    "accuracy": 0.4538279400157853,
+    "macro_f1": 0.3777579060920911
+  },
+  {
+    "run_id": "E6 extra",
+    "target": "LIAR_PLUS",
+    "method": "DistilBERT-class-weighted",
+    "accuracy": 0.47198105761641673,
+    "macro_f1": 0.415453779965284
+  },
+  {
+    "run_id": "E9 extra",
+    "target": "LIAR_PLUS",
+    "method": "weighted 4ep",
+    "accuracy": 0.4861878453038674,
+    "macro_f1": 0.45652521985961403
+  },
+  {
+    "run_id": "E2 extra",
+    "target": "LIAR_PLUS",
+    "method": "LoRA-Random-K64-balanced",
+    "accuracy": 0.5327545382794001,
+    "macro_f1": 0.5232385485314458
+  },
+  {
+    "run_id": "E11 extra",
+    "target": "LIAR_PLUS",
+    "method": "LoRA-Random-K128-balanced",
+    "accuracy": 0.5272296764009471,
+    "macro_f1": 0.5259433093077599
+  },
+  {
+    "run_id": "R6 locked",
+    "target": "FakeVsSatire",
+    "method": "LODO DistilBERT 2ep",
+    "accuracy": 0.4246575342465753,
+    "macro_f1": 0.39166666666666666
+  },
+  {
+    "run_id": "E7 extra",
+    "target": "FakeVsSatire",
+    "method": "DistilBERT-class-weighted",
+    "accuracy": 0.4383561643835616,
+    "macro_f1": 0.401998001998002
+  },
+  {
+    "run_id": "E10 extra",
+    "target": "FakeVsSatire",
+    "method": "weighted 4ep max_len256",
+    "accuracy": 0.3972602739726027,
+    "macro_f1": 0.3171768707482993
+  },
+  {
+    "run_id": "E4 extra",
+    "target": "FakeVsSatire",
+    "method": "LoRA-Random-K64-balanced",
+    "accuracy": 0.589041095890411,
+    "macro_f1": 0.5871040723981901
+  },
+  {
+    "run_id": "E12 extra",
+    "target": "FakeVsSatire",
+    "method": "LoRA-Random-K128-balanced",
+    "accuracy": 0.6712328767123288,
+    "macro_f1": 0.6604651162790698
+  }
+]

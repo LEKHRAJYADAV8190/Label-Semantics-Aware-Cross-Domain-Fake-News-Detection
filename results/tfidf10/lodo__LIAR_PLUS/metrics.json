@@ -1,0 +1,75 @@
+{
+  "run_id": "lodo__LIAR_PLUS",
+  "protocol": "lodo",
+  "target": "LIAR_PLUS",
+  "sources": [
+    "ISOT",
+    "FakeVsSatire",
+    "Celebrity",
+    "Cidii",
+    "Fakes",
+    "Horne",
+    "Infodemic",
+    "NDF",
+    "Politifact"
+  ],
+  "n_train": 13127,
+  "n_test": 1267,
+  "family": "ten_dataset_extra",
+  "fit_seconds": 7.65883319999557,
+  "metrics": {
+    "test": {
+      "n": 1267,
+      "accuracy": 0.5295974743488555,
+      "macro_f1": 0.5276669952612327,
+      "confusion_matrix": [
+        [
+          295,
+          419
+        ],
+        [
+          177,
+          376
+        ]
+      ],
+      "classification_report": {
+        "0": {
+          "precision": 0.625,
+          "recall": 0.41316526610644255,
+          "f1-score": 0.4974704890387858,
+          "support": 714.0
+        },
+        "1": {
+          "precision": 0.4729559748427673,
+          "recall": 0.6799276672694394,
+          "f1-score": 0.5578635014836796,
+          "support": 553.0
+        },
+        "accuracy": 0.5295974743488555,
+        "macro avg": {
+          "precision": 0.5489779874213836,
+          "recall": 0.5465464666879409,
+          "f1-score": 0.5276669952612327,
+          "support": 1267.0
+        },
+        "weighted avg": {
+          "precision": 0.5586382431634177,
+          "recall": 0.5295974743488555,
+          "f1-score": 0.5238298701611428,
+          "support": 1267.0
+        }
+      }
+    }
+  },
+  "train_dataset_counts": {
+    "ISOT": 4200,
+    "FakeVsSatire": 334,
+    "Celebrity": 300,
+    "Cidii": 431,
+    "Fakes": 469,
+    "Horne": 196,
+    "Infodemic": 6417,
+    "NDF": 210,
+    "Politifact": 570
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "run_id": "X_in_Celebrity",
+  "family": "ten_dataset_extra",
+  "accuracy": 0.82,
+  "macro_f1": 0.8197115384615384,
+  "classification_report": {
+    "Real": {
+      "precision": 0.8478260869565217,
+      "recall": 0.78,
+      "f1-score": 0.8125,
+      "support": 50.0
+    },
+    "Fake": {
+      "precision": 0.7962962962962963,
+      "recall": 0.86,
+      "f1-score": 0.8269230769230769,
+      "support": 50.0
+    },
+    "accuracy": 0.82,
+    "macro avg": {
+      "precision": 0.822061191626409,
+      "recall": 0.8200000000000001,
+      "f1-score": 0.8197115384615384,
+      "support": 100.0
+    },
+    "weighted avg": {
+      "precision": 0.822061191626409,
+      "recall": 0.82,
+      "f1-score": 0.8197115384615384,
+      "support": 100.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      39,
+      11
+    ],
+    [
+      7,
+      43
+    ]
+  ],
+  "n_test": 100,
+  "target": "Celebrity",
+  "sources": [
+    "Celebrity"
+  ],
+  "phase": "in_domain",
+  "method": "DistilBERT",
+  "n_train": 300,
+  "n_val": 100,
+  "train_seconds": 10.103924400056712,
+  "checkpoint": "C:\\ml\\fake-news-30\\checkpoints\\X_in_Celebrity\\final"
+}

@@ -1,0 +1,54 @@
+{
+  "run_id": "X_in_Infodemic",
+  "family": "ten_dataset_extra",
+  "accuracy": 0.9742990654205608,
+  "macro_f1": 0.9742246311352003,
+  "classification_report": {
+    "Real": {
+      "precision": 0.9691629955947136,
+      "recall": 0.9821428571428571,
+      "f1-score": 0.975609756097561,
+      "support": 1120.0
+    },
+    "Fake": {
+      "precision": 0.9800995024875622,
+      "recall": 0.9656862745098039,
+      "f1-score": 0.9728395061728395,
+      "support": 1020.0
+    },
+    "accuracy": 0.9742990654205608,
+    "macro avg": {
+      "precision": 0.974631249041138,
+      "recall": 0.9739145658263305,
+      "f1-score": 0.9742246311352003,
+      "support": 2140.0
+    },
+    "weighted avg": {
+      "precision": 0.9743757231791554,
+      "recall": 0.9742990654205608,
+      "f1-score": 0.9742893566007311,
+      "support": 2140.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      1100,
+      20
+    ],
+    [
+      35,
+      985
+    ]
+  ],
+  "n_test": 2140,
+  "target": "Infodemic",
+  "sources": [
+    "Infodemic"
+  ],
+  "phase": "in_domain",
+  "method": "DistilBERT",
+  "n_train": 6417,
+  "n_val": 2140,
+  "train_seconds": 167.91559320001397,
+  "checkpoint": "C:\\ml\\fake-news-30\\checkpoints\\X_in_Infodemic\\final"
+}

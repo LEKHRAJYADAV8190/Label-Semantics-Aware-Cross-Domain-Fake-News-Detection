@@ -1,0 +1,6 @@
+{
+  "ISOT": 6000,
+  "LIAR_PLUS": 12759,
+  "checks": "PASS: saved CSV schema, counts, labels, split integrity, hashes, raw input preservation, cleaning and duplicate conflict handling",
+  "step2": "Prepared only; not executed"
+}

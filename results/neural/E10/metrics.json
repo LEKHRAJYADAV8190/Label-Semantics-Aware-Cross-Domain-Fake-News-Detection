@@ -1,0 +1,61 @@
+{
+  "run_id": "E10",
+  "family": "improvement_extra",
+  "accuracy": 0.3972602739726027,
+  "macro_f1": 0.3171768707482993,
+  "classification_report": {
+    "Real": {
+      "precision": 0.40298507462686567,
+      "recall": 0.8709677419354839,
+      "f1-score": 0.5510204081632653,
+      "support": 31.0
+    },
+    "Fake": {
+      "precision": 0.3333333333333333,
+      "recall": 0.047619047619047616,
+      "f1-score": 0.08333333333333333,
+      "support": 42.0
+    },
+    "accuracy": 0.3972602739726027,
+    "macro avg": {
+      "precision": 0.3681592039800995,
+      "recall": 0.4592933947772657,
+      "f1-score": 0.3171768707482993,
+      "support": 73.0
+    },
+    "weighted avg": {
+      "precision": 0.3629114700470251,
+      "recall": 0.3972602739726027,
+      "f1-score": 0.2819401733296058,
+      "support": 73.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      27,
+      4
+    ],
+    [
+      40,
+      2
+    ]
+  ],
+  "n_test": 73,
+  "target": "FakeVsSatire",
+  "sources": [
+    "ISOT",
+    "LIAR_PLUS"
+  ],
+  "method": "DistilBERT-class-weighted",
+  "K": null,
+  "n_train": 14408,
+  "epochs": 4,
+  "lr": 2e-05,
+  "class_weights": [
+    0.9189947697410384,
+    1.09666615923276
+  ],
+  "checkpoint": "C:\\ml\\fake-news-30\\checkpoints\\E10\\final",
+  "train_seconds": 924.6275898999302,
+  "max_len": 256
+}

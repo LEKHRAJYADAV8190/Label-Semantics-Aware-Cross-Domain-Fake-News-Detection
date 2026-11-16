@@ -1,0 +1,24 @@
+{
+  "method": "Guided",
+  "K": 16,
+  "pool": "target train only",
+  "ids": [
+    "LIAR_PLUS:10219.json",
+    "LIAR_PLUS:3921.json",
+    "LIAR_PLUS:7910.json",
+    "LIAR_PLUS:2948.json",
+    "LIAR_PLUS:10112.json",
+    "LIAR_PLUS:8618.json",
+    "LIAR_PLUS:1627.json",
+    "LIAR_PLUS:5632.json",
+    "LIAR_PLUS:1798.json",
+    "LIAR_PLUS:12114.json",
+    "LIAR_PLUS:6651.json",
+    "LIAR_PLUS:2718.json",
+    "LIAR_PLUS:12324.json",
+    "LIAR_PLUS:11592.json",
+    "LIAR_PLUS:530.json",
+    "LIAR_PLUS:12163.json"
+  ],
+  "rule": "highest source-model predictive entropy"
+}

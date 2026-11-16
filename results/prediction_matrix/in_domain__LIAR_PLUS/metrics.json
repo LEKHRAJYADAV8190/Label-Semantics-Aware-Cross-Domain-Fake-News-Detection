@@ -1,0 +1,163 @@
+{
+  "run_id": "in_domain__LIAR_PLUS",
+  "model": "TF-IDF + LogisticRegression",
+  "protocol": "in_domain",
+  "target": "LIAR_PLUS",
+  "sources": [
+    "LIAR_PLUS"
+  ],
+  "signature": {
+    "parameters": {
+      "seed": 42,
+      "ngram_range": [
+        1,
+        2
+      ],
+      "min_df": 2,
+      "max_features": 50000,
+      "sublinear_tf": true,
+      "lowercase": true,
+      "C": 1.0,
+      "solver": "liblinear",
+      "max_iter": 1000,
+      "class_weight": null
+    },
+    "processed_sha256": {
+      "ISOT": "b394b17963036936bfb1681edec6ac4953b71f49de28b21f13f938a7f9782b2b",
+      "LIAR_PLUS": "a8532724a2ff0e7e796eb3f066bd140ef3f4446e3dc865ae79bc0e91c3dd816d",
+      "FakeVsSatire": "5220b24f0696b99dddf7b6761736d55d6a798fc7562589076f99f7ad65764a53"
+    },
+    "script_sha256": "cc06507c73341b8ec6659ae1338a9ea334d1daa3b154a9bd26a542542ee412f8",
+    "sklearn_version": "1.6.1"
+  },
+  "completed_utc": "2026-10-06T18:00:06.113726+00:00",
+  "python_version": "3.12.14",
+  "n_train": 10208,
+  "train_label_counts": {
+    "1": 4469,
+    "0": 5739
+  },
+  "train_dataset_counts": {
+    "LIAR_PLUS": 10208
+  },
+  "vocabulary_size": 25695,
+  "fit_seconds": 0.3236460000043735,
+  "elapsed_seconds": 0.7677685000235215,
+  "model_path": "C:\\ml\\fake-news-30\\results\\tfidf\\in_domain__LIAR_PLUS\\model.joblib",
+  "metrics": {
+    "validation": {
+      "n": 1284,
+      "accuracy": 0.6269470404984424,
+      "macro_f1": 0.6161856579160039,
+      "confusion_matrix": [
+        [
+          510,
+          158
+        ],
+        [
+          321,
+          295
+        ]
+      ],
+      "confusion_matrix_labels": [
+        0,
+        1
+      ],
+      "classification_report": {
+        "0": {
+          "precision": 0.6137184115523465,
+          "recall": 0.7634730538922155,
+          "f1-score": 0.6804536357571714,
+          "support": 668.0
+        },
+        "1": {
+          "precision": 0.6512141280353201,
+          "recall": 0.4788961038961039,
+          "f1-score": 0.5519176800748363,
+          "support": 616.0
+        },
+        "accuracy": 0.6269470404984424,
+        "macro avg": {
+          "precision": 0.6324662697938332,
+          "recall": 0.6211845788941597,
+          "f1-score": 0.6161856579160039,
+          "support": 1284.0
+        },
+        "weighted avg": {
+          "precision": 0.6317070107373245,
+          "recall": 0.6269470404984424,
+          "f1-score": 0.6187884109126867,
+          "support": 1284.0
+        }
+      }
+    },
+    "test": {
+      "n": 1267,
+      "accuracy": 0.6195737963693765,
+      "macro_f1": 0.5920678562076834,
+      "confusion_matrix": [
+        [
+          557,
+          157
+        ],
+        [
+          325,
+          228
+        ]
+      ],
+      "confusion_matrix_labels": [
+        0,
+        1
+      ],
+      "classification_report": {
+        "0": {
+          "precision": 0.6315192743764172,
+          "recall": 0.7801120448179272,
+          "f1-score": 0.6979949874686717,
+          "support": 714.0
+        },
+        "1": {
+          "precision": 0.5922077922077922,
+          "recall": 0.41229656419529837,
+          "f1-score": 0.4861407249466951,
+          "support": 553.0
+        },
+        "accuracy": 0.6195737963693765,
+        "macro avg": {
+          "precision": 0.6118635332921047,
+          "recall": 0.5962043045066128,
+          "f1-score": 0.5920678562076834,
+          "support": 1267.0
+        },
+        "weighted avg": {
+          "precision": 0.6143612241481223,
+          "recall": 0.6195737963693765,
+          "f1-score": 0.6055282099038312,
+          "support": 1267.0
+        }
+      }
+    }
+  },
+  "persistence_prediction_check": "passed",
+  "validation_role": "Report only; fixed hyperparameters, no selection or tuning.",
+  "label_semantics": {
+    "ISOT": {
+      "0": "Real",
+      "1": "Fake"
+    },
+    "LIAR_PLUS": {
+      "0": "half-true/mostly-true/true",
+      "1": "pants-fire/false/barely-true"
+    },
+    "FakeVsSatire": {
+      "0": "Satire",
+      "1": "Fake"
+    }
+  },
+  "leakage_checks": "All processed IDs and normalized exact texts unique globally; vectorizer fit only on train. Near duplicates not ruled out.",
+  "artifact_sha256": {
+    "model.joblib": "64d980ad2caa4697e2cef1b8f9b85e425bb77cee3ddefb2119660baa2a98b8c7",
+    "validation_predictions.csv": "d9f3eb4d9942cfe5ec0ccb303e8fa10ae18abb537e487c7978af136232030111",
+    "test_predictions.csv": "9f42e7a73fe66e5c74cae87fa4c318ca2484fbbb1ba5cec41b703a827c674af2"
+  }
+}

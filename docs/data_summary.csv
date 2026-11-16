@@ -1,0 +1,10 @@
+dataset,split,total,label_0,label_1,label_0_meaning,label_1_meaning
+ISOT,train,4200,2100,2100,Real,Fake
+ISOT,val,900,450,450,Real,Fake
+ISOT,test,900,450,450,Real,Fake
+LIAR_PLUS,train,10208,5739,4469,half-true/mostly-true/true,pants-fire/false/barely-true
+LIAR_PLUS,val,1284,668,616,half-true/mostly-true/true,pants-fire/false/barely-true
+LIAR_PLUS,test,1267,714,553,half-true/mostly-true/true,pants-fire/false/barely-true
+FakeVsSatire,train,334,141,193,Satire,Fake
+FakeVsSatire,val,71,30,41,Satire,Fake
+FakeVsSatire,test,73,31,42,Satire,Fake

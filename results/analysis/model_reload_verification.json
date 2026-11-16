@@ -1,0 +1,1854 @@
+{
+  "status": "passed",
+  "completed_utc": "2026-10-06T18:46:14.925394+00:00",
+  "elapsed_seconds": 8.155925299972296,
+  "model_count": 16,
+  "device": "cuda",
+  "torch_version": "2.7.1+cu126",
+  "offline_environment": {
+    "HF_HUB_OFFLINE": "1",
+    "TRANSFORMERS_OFFLINE": "1"
+  },
+  "network_guard": "Python socket connect/connect_ex/create_connection/getaddrinfo blocked after library imports",
+  "blocked_network_attempts": 0,
+  "sample_rule": "Up to eight evenly spaced positions in lexicographically sorted target TEST IDs; no labels/predictions used for selection.",
+  "caveats": [
+    "Sampled reload check, not full-test score recomputation or a training-resume test.",
+    "Neural probability tolerance is absolute 0.005 for FP16 saved versus FP32 reload; labels must match exactly.",
+    "Socket guard covers Python networking in this verification process, not a system-wide firewall."
+  ],
+  "runs": [
+    {
+      "run_id": "in_domain__FakeVsSatire",
+      "target": "FakeVsSatire",
+      "n_test_samples": 8,
+      "sample_ids": [
+        "FakeVsSatire:Fake/finalFake:105.txt",
+        "FakeVsSatire:Fake/finalFake:202.txt",
+        "FakeVsSatire:Fake/finalFake:332.txt",
+        "FakeVsSatire:Fake/finalFake:433.txt",
+        "FakeVsSatire:Fake/finalFake:92.txt",
+        "FakeVsSatire:Satire/finalSatire:280.txt",
+        "FakeVsSatire:Satire/finalSatire:467.txt",
+        "FakeVsSatire:Satire/finalSatire:87.txt"
+      ],
+      "prediction_labels_match": true,
+      "probabilities_within_tolerance": true,
+      "max_absolute_probability_difference": 0.0,
+      "absolute_probability_tolerance": 1e-10,
+      "reloaded_predictions": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "saved_predictions": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "reloaded_probabilities": [
+        [
+          0.3947319953326305,
+          0.6052680046673695
+        ],
+        [
+          0.39963078874991154,
+          0.6003692112500885
+        ],
+        [
+          0.43101009004533675,
+          0.5689899099546633
+        ],
+        [
+          0.4390041929135087,
+          0.5609958070864913
+        ],
+        [
+          0.3012680536005945,
+          0.6987319463994055
+        ],
+        [
+          0.548068519207279,
+          0.451931480792721
+        ],
+        [
+          0.521820725185473,
+          0.47817927481452704
+        ],
+        [
+          0.5198736405289528,
+          0.4801263594710472
+        ]
+      ],
+      "saved_probabilities": [
+        [
+          0.3947319953326305,
+          0.6052680046673695
+        ],
+        [
+          0.39963078874991154,
+          0.6003692112500885
+        ],
+        [
+          0.43101009004533675,
+          0.5689899099546633
+        ],
+        [
+          0.4390041929135087,
+          0.5609958070864913
+        ],
+        [
+          0.3012680536005945,
+          0.6987319463994055
+        ],
+        [
+          0.548068519207279,
+          0.451931480792721
+        ],
+        [
+          0.521820725185473,
+          0.47817927481452704
+        ],
+        [
+          0.5198736405289528,
+          0.4801263594710472
+        ]
+      ],
+      "artifact_sha256": {
+        "results\\tfidf\\in_domain__FakeVsSatire\\model.joblib": "89d24c00dc7455d2b3f494cf5a0b8a5f874bcfa2b5d47da538bb769cdcdd465e",
+        "results\\tfidf\\in_domain__FakeVsSatire\\test_predictions.csv": "8ba231b404000ac62f888500c45e348600953b10e251d9e5d8aff3fc4ccbbfe4"
+      },
+      "status": "passed",
+      "inference_precision": "saved scikit-learn model native precision"
+    },
+    {
+      "run_id": "in_domain__ISOT",
+      "target": "ISOT",
+      "n_test_samples": 8,
+      "sample_ids": [
+        "ISOT:Fake.csv:10062",
+        "ISOT:Fake.csv:14289",
+        "ISOT:Fake.csv:3309",
+        "ISOT:Fake.csv:7852",
+        "ISOT:True.csv:11995",
+        "ISOT:True.csv:16608",
+        "ISOT:True.csv:5758",
+        "ISOT:True.csv:9852"
+      ],
+      "prediction_labels_match": true,
+      "probabilities_within_tolerance": true,
+      "max_absolute_probability_difference": 0.0,
+      "absolute_probability_tolerance": 1e-10,
+      "reloaded_predictions": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "saved_predictions": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "reloaded_probabilities": [
+        [
+          0.10418739457633841,
+          0.8958126054236616
+        ],
+        [
+          0.33210707370460013,
+          0.6678929262953999
+        ],
+        [
+          0.052796934585121025,
+          0.947203065414879
+        ],
+        [
+          0.06294668914486057,
+          0.9370533108551394
+        ],
+        [
+          0.6748145881499612,
+          0.32518541185003874
+        ],
+        [
+          0.8458572963628497,
+          0.1541427036371503
+        ],
+        [
+          0.48067365891737224,
+          0.5193263410826278
+        ],
+        [
+          0.816049236402983,
+          0.183950763597017
+        ]
+      ],
+      "saved_probabilities": [
+        [
+          0.10418739457633841,
+          0.8958126054236616
+        ],
+        [
+          0.33210707370460013,
+          0.6678929262953999
+        ],
+        [
+          0.052796934585121025,
+          0.947203065414879
+        ],
+        [
+          0.06294668914486057,
+          0.9370533108551394
+        ],
+        [
+          0.6748145881499612,
+          0.32518541185003874
+        ],
+        [
+          0.8458572963628497,
+          0.1541427036371503
+        ],
+        [
+          0.48067365891737224,
+          0.5193263410826278
+        ],
+        [
+          0.816049236402983,
+          0.183950763597017
+        ]
+      ],
+      "artifact_sha256": {
+        "results\\tfidf\\in_domain__ISOT\\model.joblib": "1dddd9ee33e745db50098a90bc4cfdc9f007a6ffe68f38e7008ee515a586b4e8",
+        "results\\tfidf\\in_domain__ISOT\\test_predictions.csv": "009e2dc8933dd23b18ed2f02172427b34b5e97a60a9a633211fc2464e93ec606"
+      },
+      "status": "passed",
+      "inference_precision": "saved scikit-learn model native precision"
+    },
+    {
+      "run_id": "in_domain__LIAR_PLUS",
+      "target": "LIAR_PLUS",
+      "n_test_samples": 8,
+      "sample_ids": [
+        "LIAR_PLUS:10040.json",
+        "LIAR_PLUS:11832.json",
+        "LIAR_PLUS:13484.json",
+        "LIAR_PLUS:2911.json",
+        "LIAR_PLUS:4709.json",
+        "LIAR_PLUS:660.json",
+        "LIAR_PLUS:8192.json",
+        "LIAR_PLUS:9995.json"
+      ],
+      "prediction_labels_match": true,
+      "probabilities_within_tolerance": true,
+      "max_absolute_probability_difference": 0.0,
+      "absolute_probability_tolerance": 1e-10,
+      "reloaded_predictions": [
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "saved_predictions": [
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "reloaded_probabilities": [
+        [
+          0.32193774390778773,
+          0.6780622560922123
+        ],
+        [
+          0.4601230475037047,
+          0.5398769524962953
+        ],
+        [
+          0.5963324157726911,
+          0.40366758422730886
+        ],
+        [
+          0.5196192362485864,
+          0.4803807637514136
+        ],
+        [
+          0.33693850440265627,
+          0.6630614955973437
+        ],
+        [
+          0.5722315370316143,
+          0.42776846296838567
+        ],
+        [
+          0.5521190258674727,
+          0.44788097413252725
+        ],
+        [
+          0.59554590752069,
+          0.40445409247930997
+        ]
+      ],
+      "saved_probabilities": [
+        [
+          0.32193774390778773,
+          0.6780622560922123
+        ],
+        [
+          0.4601230475037047,
+          0.5398769524962953
+        ],
+        [
+          0.5963324157726911,
+          0.40366758422730886
+        ],
+        [
+          0.5196192362485864,
+          0.4803807637514136
+        ],
+        [
+          0.33693850440265627,
+          0.6630614955973437
+        ],
+        [
+          0.5722315370316143,
+          0.42776846296838567
+        ],
+        [
+          0.5521190258674727,
+          0.44788097413252725
+        ],
+        [
+          0.59554590752069,
+          0.40445409247930997
+        ]
+      ],
+      "artifact_sha256": {
+        "results\\tfidf\\in_domain__LIAR_PLUS\\model.joblib": "64d980ad2caa4697e2cef1b8f9b85e425bb77cee3ddefb2119660baa2a98b8c7",
+        "results\\tfidf\\in_domain__LIAR_PLUS\\test_predictions.csv": "9f42e7a73fe66e5c74cae87fa4c318ca2484fbbb1ba5cec41b703a827c674af2"
+      },
+      "status": "passed",
+      "inference_precision": "saved scikit-learn model native precision"
+    },
+    {
+      "run_id": "lodo__FakeVsSatire",
+      "target": "FakeVsSatire",
+      "n_test_samples": 8,
+      "sample_ids": [
+        "FakeVsSatire:Fake/finalFake:105.txt",
+        "FakeVsSatire:Fake/finalFake:202.txt",
+        "FakeVsSatire:Fake/finalFake:332.txt",
+        "FakeVsSatire:Fake/finalFake:433.txt",
+        "FakeVsSatire:Fake/finalFake:92.txt",
+        "FakeVsSatire:Satire/finalSatire:280.txt",
+        "FakeVsSatire:Satire/finalSatire:467.txt",
+        "FakeVsSatire:Satire/finalSatire:87.txt"
+      ],
+      "prediction_labels_match": true,
+      "probabilities_within_tolerance": true,
+      "max_absolute_probability_difference": 0.0,
+      "absolute_probability_tolerance": 1e-10,
+      "reloaded_predictions": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "saved_predictions": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "reloaded_probabilities": [
+        [
+          0.1982314262453727,
+          0.8017685737546273
+        ],
+        [
+          0.2038543022300292,
+          0.7961456977699708
+        ],
+        [
+          0.08228650914160285,
+          0.9177134908583972
+        ],
+        [
+          0.06822709762690904,
+          0.931772902373091
+        ],
+        [
+          0.15134030290150602,
+          0.848659697098494
+        ],
+        [
+          0.34605348908979106,
+          0.653946510910209
+        ],
+        [
+          0.36940430511132427,
+          0.6305956948886757
+        ],
+        [
+          0.09547748682870738,
+          0.9045225131712926
+        ]
+      ],
+      "saved_probabilities": [
+        [
+          0.1982314262453727,
+          0.8017685737546273
+        ],
+        [
+          0.2038543022300292,
+          0.7961456977699708
+        ],
+        [
+          0.08228650914160285,
+          0.9177134908583972
+        ],
+        [
+          0.06822709762690904,
+          0.931772902373091
+        ],
+        [
+          0.15134030290150602,
+          0.848659697098494
+        ],
+        [
+          0.34605348908979106,
+          0.653946510910209
+        ],
+        [
+          0.36940430511132427,
+          0.6305956948886757
+        ],
+        [
+          0.09547748682870738,
+          0.9045225131712926
+        ]
+      ],
+      "artifact_sha256": {
+        "results\\tfidf\\lodo__FakeVsSatire\\model.joblib": "327cb9b4da0a0f859e7dcf789b910edc1c1093c1f5913209a520aefb3a1bf022",
+        "results\\tfidf\\lodo__FakeVsSatire\\test_predictions.csv": "155efde820439fad47c016f4c7d08890d93832acd118702f4f8eb34c64d2db00"
+      },
+      "status": "passed",
+      "inference_precision": "saved scikit-learn model native precision"
+    },
+    {
+      "run_id": "lodo__ISOT",
+      "target": "ISOT",
+      "n_test_samples": 8,
+      "sample_ids": [
+        "ISOT:Fake.csv:10062",
+        "ISOT:Fake.csv:14289",
+        "ISOT:Fake.csv:3309",
+        "ISOT:Fake.csv:7852",
+        "ISOT:True.csv:11995",
+        "ISOT:True.csv:16608",
+        "ISOT:True.csv:5758",
+        "ISOT:True.csv:9852"
+      ],
+      "prediction_labels_match": true,
+      "probabilities_within_tolerance": true,
+      "max_absolute_probability_difference": 0.0,
+      "absolute_probability_tolerance": 1e-10,
+      "reloaded_predictions": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "saved_predictions": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "reloaded_probabilities": [
+        [
+          0.4965464652239796,
+          0.5034535347760204
+        ],
+        [
+          0.5819433487769914,
+          0.41805665122300856
+        ],
+        [
+          0.4972332125898169,
+          0.5027667874101831
+        ],
+        [
+          0.38310513307827443,
+          0.6168948669217256
+        ],
+        [
+          0.47454787029308965,
+          0.5254521297069104
+        ],
+        [
+          0.5375327252947679,
+          0.46246727470523213
+        ],
+        [
+          0.44155898707354446,
+          0.5584410129264555
+        ],
+        [
+          0.5861571431342878,
+          0.41384285686571215
+        ]
+      ],
+      "saved_probabilities": [
+        [
+          0.4965464652239796,
+          0.5034535347760204
+        ],
+        [
+          0.5819433487769914,
+          0.41805665122300856
+        ],
+        [
+          0.4972332125898169,
+          0.5027667874101831
+        ],
+        [
+          0.38310513307827443,
+          0.6168948669217256
+        ],
+        [
+          0.47454787029308965,
+          0.5254521297069104
+        ],
+        [
+          0.5375327252947679,
+          0.46246727470523213
+        ],
+        [
+          0.44155898707354446,
+          0.5584410129264555
+        ],
+        [
+          0.5861571431342878,
+          0.41384285686571215
+        ]
+      ],
+      "artifact_sha256": {
+        "results\\tfidf\\lodo__ISOT\\model.joblib": "ad29a870c54bc396f6d21c173d052ac9b5850aa38fc5ef2bbd281e70ace220d9",
+        "results\\tfidf\\lodo__ISOT\\test_predictions.csv": "e48e8841adf87d93ec81864cc49120e2e83117e5e33f17222db04a053c18556e"
+      },
+      "status": "passed",
+      "inference_precision": "saved scikit-learn model native precision"
+    },
+    {
+      "run_id": "lodo__LIAR_PLUS",
+      "target": "LIAR_PLUS",
+      "n_test_samples": 8,
+      "sample_ids": [
+        "LIAR_PLUS:10040.json",
+        "LIAR_PLUS:11832.json",
+        "LIAR_PLUS:13484.json",
+        "LIAR_PLUS:2911.json",
+        "LIAR_PLUS:4709.json",
+        "LIAR_PLUS:660.json",
+        "LIAR_PLUS:8192.json",
+        "LIAR_PLUS:9995.json"
+      ],
+      "prediction_labels_match": true,
+      "probabilities_within_tolerance": true,
+      "max_absolute_probability_difference": 0.0,
+      "absolute_probability_tolerance": 1e-10,
+      "reloaded_predictions": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "saved_predictions": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "reloaded_probabilities": [
+        [
+          0.5013662622942756,
+          0.49863373770572433
+        ],
+        [
+          0.43973601136595564,
+          0.5602639886340444
+        ],
+        [
+          0.7088816614991584,
+          0.29111833850084157
+        ],
+        [
+          0.4931714352118344,
+          0.5068285647881656
+        ],
+        [
+          0.4781964288102093,
+          0.5218035711897907
+        ],
+        [
+          0.541022339313354,
+          0.4589776606866461
+        ],
+        [
+          0.4480767621479461,
+          0.5519232378520539
+        ],
+        [
+          0.4204338596659113,
+          0.5795661403340887
+        ]
+      ],
+      "saved_probabilities": [
+        [
+          0.5013662622942756,
+          0.49863373770572433
+        ],
+        [
+          0.43973601136595564,
+          0.5602639886340444
+        ],
+        [
+          0.7088816614991584,
+          0.29111833850084157
+        ],
+        [
+          0.4931714352118344,
+          0.5068285647881656
+        ],
+        [
+          0.4781964288102093,
+          0.5218035711897907
+        ],
+        [
+          0.541022339313354,
+          0.4589776606866461
+        ],
+        [
+          0.4480767621479461,
+          0.5519232378520539
+        ],
+        [
+          0.4204338596659113,
+          0.5795661403340887
+        ]
+      ],
+      "artifact_sha256": {
+        "results\\tfidf\\lodo__LIAR_PLUS\\model.joblib": "ee1e9a2ae086652b736f99f0ea9af28b080c69b8a99cb21559dddf7b3f98a4ef",
+        "results\\tfidf\\lodo__LIAR_PLUS\\test_predictions.csv": "3e135965492fc89b96dd4ad8daae8db3cef85f58dfe84aaa0b89b369664cdb5f"
+      },
+      "status": "passed",
+      "inference_precision": "saved scikit-learn model native precision"
+    },
+    {
+      "run_id": "R1",
+      "target": "ISOT",
+      "n_test_samples": 8,
+      "sample_ids": [
+        "ISOT:Fake.csv:10062",
+        "ISOT:Fake.csv:14289",
+        "ISOT:Fake.csv:3309",
+        "ISOT:Fake.csv:7852",
+        "ISOT:True.csv:11995",
+        "ISOT:True.csv:16608",
+        "ISOT:True.csv:5758",
+        "ISOT:True.csv:9852"
+      ],
+      "prediction_labels_match": true,
+      "probabilities_within_tolerance": true,
+      "max_absolute_probability_difference": 3.5762786865234375e-07,
+      "absolute_probability_tolerance": 0.005,
+      "reloaded_predictions": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "saved_predictions": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reloaded_probabilities": [
+        [
+          0.00019805310876108706,
+          0.9998019337654114
+        ],
+        [
+          0.00017286653746850789,
+          0.9998272061347961
+        ],
+        [
+          0.00014346532407216728,
+          0.9998564720153809
+        ],
+        [
+          0.00021680931968148798,
+          0.9997832179069519
+        ],
+        [
+          0.999809205532074,
+          0.00019082061771769077
+        ],
+        [
+          0.999809205532074,
+          0.00019078714831266552
+        ],
+        [
+          0.9998087286949158,
+          0.00019127274572383612
+        ],
+        [
+          0.9998327493667603,
+          0.00016723778389859945
+        ]
+      ],
+      "saved_probabilities": [
+        [
+          0.00019794095715042204,
+          0.9998020529747009
+        ],
+        [
+          0.000172651547472924,
+          0.9998273253440857
+        ],
+        [
+          0.0001431373821105808,
+          0.9998568296432495
+        ],
+        [
+          0.00021654405281879008,
+          0.999783456325531
+        ],
+        [
+          0.9998089671134949,
+          0.000191104321856983
+        ],
+        [
+          0.9998089671134949,
+          0.000191104321856983
+        ],
+        [
+          0.9998089671134949,
+          0.000191104321856983
+        ],
+        [
+          0.9998326301574707,
+          0.00016734049131628126
+        ]
+      ],
+      "artifact_sha256": {
+        "results\\neural\\R1\\predictions.csv": "688a80205603c81e9e301c80adeb9e8261e9022a68f184ffcbba968dd0efa9d7",
+        "checkpoints\\R1\\final\\model.safetensors": "7ff77655ecdfa6ba18bd5e8a74ce3d5a76e55b843b0b1a63a0965c84ce5b3b43",
+        "checkpoints\\R1\\final\\config.json": "3bd633e487bdcf3539ad9f1f1ab9b4449bb6e176f0fcead95eaf2d57ff92f927"
+      },
+      "status": "passed",
+      "inference_precision": "FP32; saved predictions used Trainer mixed FP16 evaluation",
+      "adapter_base_run": null
+    },
+    {
+      "run_id": "R2",
+      "target": "LIAR_PLUS",
+      "n_test_samples": 8,
+      "sample_ids": [
+        "LIAR_PLUS:10040.json",
+        "LIAR_PLUS:11832.json",
+        "LIAR_PLUS:13484.json",
+        "LIAR_PLUS:2911.json",
+        "LIAR_PLUS:4709.json",
+        "LIAR_PLUS:660.json",
+        "LIAR_PLUS:8192.json",
+        "LIAR_PLUS:9995.json"
+      ],
+      "prediction_labels_match": true,
+      "probabilities_within_tolerance": true,
+      "max_absolute_probability_difference": 9.709596633911133e-05,
+      "absolute_probability_tolerance": 0.005,
+      "reloaded_predictions": [
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "saved_predictions": [
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "reloaded_probabilities": [
+        [
+          0.43489906191825867,
+          0.565100908279419
+        ],
+        [
+          0.36674463748931885,
+          0.6332553029060364
+        ],
+        [
+          0.560997486114502,
+          0.43900245428085327
+        ],
+        [
+          0.5595723390579224,
+          0.44042763113975525
+        ],
+        [
+          0.38731521368026733,
+          0.6126847863197327
+        ],
+        [
+          0.49040594696998596,
+          0.5095940232276917
+        ],
+        [
+          0.8120938539505005,
+          0.1879061460494995
+        ],
+        [
+          0.7272779941558838,
+          0.2727220058441162
+        ]
+      ],
+      "saved_probabilities": [
+        [
+          0.43495625257492065,
+          0.5650437474250793
+        ],
+        [
+          0.36678817868232727,
+          0.6332118511199951
+        ],
+        [
+          0.5610945820808411,
+          0.43890541791915894
+        ],
+        [
+          0.5595307350158691,
+          0.44046926498413086
+        ],
+        [
+          0.3872847259044647,
+          0.6127153038978577
+        ],
+        [
+          0.49043008685112,
+          0.5095698833465576
+        ],
+        [
+          0.8121234178543091,
+          0.18787653744220734
+        ],
+        [
+          0.7273464798927307,
+          0.2726535201072693
+        ]
+      ],
+      "artifact_sha256": {
+        "results\\neural\\R2\\predictions.csv": "13d62232c93137e8dae3a7099164b1047f24b3170474201d6843435a1978a4c9",
+        "checkpoints\\R2\\final\\model.safetensors": "74638694560defc2d7e993e12fa20c138777d4f8bd9888ccd86dada8ad3080db",
+        "checkpoints\\R2\\final\\config.json": "3bd633e487bdcf3539ad9f1f1ab9b4449bb6e176f0fcead95eaf2d57ff92f927"
+      },
+      "status": "passed",
+      "inference_precision": "FP32; saved predictions used Trainer mixed FP16 evaluation",
+      "adapter_base_run": null
+    },
+    {
+      "run_id": "R3",
+      "target": "FakeVsSatire",
+      "n_test_samples": 8,
+      "sample_ids": [
+        "FakeVsSatire:Fake/finalFake:105.txt",
+        "FakeVsSatire:Fake/finalFake:202.txt",
+        "FakeVsSatire:Fake/finalFake:332.txt",
+        "FakeVsSatire:Fake/finalFake:433.txt",
+        "FakeVsSatire:Fake/finalFake:92.txt",
+        "FakeVsSatire:Satire/finalSatire:280.txt",
+        "FakeVsSatire:Satire/finalSatire:467.txt",
+        "FakeVsSatire:Satire/finalSatire:87.txt"
+      ],
+      "prediction_labels_match": true,
+      "probabilities_within_tolerance": true,
+      "max_absolute_probability_difference": 0.0003796517848968506,
+      "absolute_probability_tolerance": 0.005,
+      "reloaded_predictions": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "saved_predictions": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "reloaded_probabilities": [
+        [
+          0.4106796383857727,
+          0.5893203616142273
+        ],
+        [
+          0.5571490526199341,
+          0.44285088777542114
+        ],
+        [
+          0.1977604329586029,
+          0.8022395372390747
+        ],
+        [
+          0.2791299521923065,
+          0.7208700180053711
+        ],
+        [
+          0.2584949731826782,
+          0.7415050268173218
+        ],
+        [
+          0.8441237211227417,
+          0.1558762639760971
+        ],
+        [
+          0.8330222368240356,
+          0.16697779297828674
+        ],
+        [
+          0.6073708534240723,
+          0.3926291763782501
+        ]
+      ],
+      "saved_probabilities": [
+        [
+          0.41060855984687805,
+          0.5893914699554443
+        ],
+        [
+          0.557258129119873,
+          0.44274190068244934
+        ],
+        [
+          0.1977541297674179,
+          0.8022459149360657
+        ],
+        [
+          0.2792384624481201,
+          0.7207615375518799
+        ],
+        [
+          0.25841954350471497,
+          0.7415804266929626
+        ],
+        [
+          0.8440879583358765,
+          0.15591201186180115
+        ],
+        [
+          0.8331210017204285,
+          0.16687896847724915
+        ],
+        [
+          0.607750415802002,
+          0.39224952459335327
+        ]
+      ],
+      "artifact_sha256": {
+        "results\\neural\\R3\\predictions.csv": "7d5dd72c1528a70bf499a9c9f961da73e605c40e718d7e2cff2477d120df115b",
+        "checkpoints\\R3\\final\\model.safetensors": "41001ae0a72373c091e84ce0f883b1c6756434907f9db7fde4391caca6d98432",
+        "checkpoints\\R3\\final\\config.json": "3bd633e487bdcf3539ad9f1f1ab9b4449bb6e176f0fcead95eaf2d57ff92f927"
+      },
+      "status": "passed",
+      "inference_precision": "FP32; saved predictions used Trainer mixed FP16 evaluation",
+      "adapter_base_run": null
+    },
+    {
+      "run_id": "R4",
+      "target": "ISOT",
+      "n_test_samples": 8,
+      "sample_ids": [
+        "ISOT:Fake.csv:10062",
+        "ISOT:Fake.csv:14289",
+        "ISOT:Fake.csv:3309",
+        "ISOT:Fake.csv:7852",
+        "ISOT:True.csv:11995",
+        "ISOT:True.csv:16608",
+        "ISOT:True.csv:5758",
+        "ISOT:True.csv:9852"
+      ],
+      "prediction_labels_match": true,
+      "probabilities_within_tolerance": true,
+      "max_absolute_probability_difference": 0.00010991096496582031,
+      "absolute_probability_tolerance": 0.005,
+      "reloaded_predictions": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "saved_predictions": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "reloaded_probabilities": [
+        [
+          0.4707704782485962,
+          0.5292295217514038
+        ],
+        [
+          0.32055386900901794,
+          0.6794461607933044
+        ],
+        [
+          0.4156077802181244,
+          0.584392249584198
+        ],
+        [
+          0.42219439148902893,
+          0.5778055787086487
+        ],
+        [
+          0.4056800305843353,
+          0.5943199992179871
+        ],
+        [
+          0.5112701058387756,
+          0.48872989416122437
+        ],
+        [
+          0.3302052319049835,
+          0.6697947382926941
+        ],
+        [
+          0.3931705355644226,
+          0.6068294644355774
+        ]
+      ],
+      "saved_probabilities": [
+        [
+          0.47066056728363037,
+          0.5293394327163696
+        ],
+        [
+          0.3205553889274597,
+          0.6794446110725403
+        ],
+        [
+          0.4155805706977844,
+          0.5844194293022156
+        ],
+        [
+          0.4221472442150116,
+          0.577852725982666
+        ],
+        [
+          0.4056841731071472,
+          0.5943158864974976
+        ],
+        [
+          0.5112743377685547,
+          0.4887256622314453
+        ],
+        [
+          0.3302011489868164,
+          0.6697988510131836
+        ],
+        [
+          0.39315199851989746,
+          0.6068480014801025
+        ]
+      ],
+      "artifact_sha256": {
+        "results\\neural\\R4\\predictions.csv": "a6e4788871bbbb7e6038c078f0d4d3fac58652fb35843b65859741734ca88ab5",
+        "checkpoints\\R4\\final\\model.safetensors": "f29fc7bfd3fde1c0afc6e4e71d16577873a3191e5c17986a14d57270807d571b",
+        "checkpoints\\R4\\final\\config.json": "3bd633e487bdcf3539ad9f1f1ab9b4449bb6e176f0fcead95eaf2d57ff92f927"
+      },
+      "status": "passed",
+      "inference_precision": "FP32; saved predictions used Trainer mixed FP16 evaluation",
+      "adapter_base_run": null
+    },
+    {
+      "run_id": "R5",
+      "target": "LIAR_PLUS",
+      "n_test_samples": 8,
+      "sample_ids": [
+        "LIAR_PLUS:10040.json",
+        "LIAR_PLUS:11832.json",
+        "LIAR_PLUS:13484.json",
+        "LIAR_PLUS:2911.json",
+        "LIAR_PLUS:4709.json",
+        "LIAR_PLUS:660.json",
+        "LIAR_PLUS:8192.json",
+        "LIAR_PLUS:9995.json"
+      ],
+      "prediction_labels_match": true,
+      "probabilities_within_tolerance": true,
+      "max_absolute_probability_difference": 2.6728957891464233e-05,
+      "absolute_probability_tolerance": 0.005,
+      "reloaded_predictions": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "saved_predictions": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "reloaded_probabilities": [
+        [
+          0.009028535336256027,
+          0.9909714460372925
+        ],
+        [
+          0.023044994100928307,
+          0.9769550561904907
+        ],
+        [
+          0.9917528033256531,
+          0.008247273042798042
+        ],
+        [
+          0.0007321785087697208,
+          0.9992678761482239
+        ],
+        [
+          0.0009209868730977178,
+          0.9990789890289307
+        ],
+        [
+          0.9996849298477173,
+          0.00031513485009782016
+        ],
+        [
+          0.029859939590096474,
+          0.9701400399208069
+        ],
+        [
+          0.003682030364871025,
+          0.996317982673645
+        ]
+      ],
+      "saved_probabilities": [
+        [
+          0.009055264294147491,
+          0.9909447431564331
+        ],
+        [
+          0.023043232038617134,
+          0.9769567847251892
+        ],
+        [
+          0.9917484521865845,
+          0.008251599036157131
+        ],
+        [
+          0.0007321813027374446,
+          0.9992678761482239
+        ],
+        [
+          0.0009199836058542132,
+          0.9990800619125366
+        ],
+        [
+          0.9996843338012695,
+          0.0003156543825753033
+        ],
+        [
+          0.029844805598258972,
+          0.9701551795005798
+        ],
+        [
+          0.0036785088013857603,
+          0.996321439743042
+        ]
+      ],
+      "artifact_sha256": {
+        "results\\neural\\R5\\predictions.csv": "cbf7b5b423b2c070e2897c4c5f28a71122a639ac75d4782b803b02e2d3061534",
+        "checkpoints\\R5\\final\\model.safetensors": "76cd785380a7b6b83d4f7efd0d405e279714532946619facb8371d15fe3ab710",
+        "checkpoints\\R5\\final\\config.json": "3bd633e487bdcf3539ad9f1f1ab9b4449bb6e176f0fcead95eaf2d57ff92f927"
+      },
+      "status": "passed",
+      "inference_precision": "FP32; saved predictions used Trainer mixed FP16 evaluation",
+      "adapter_base_run": null
+    },
+    {
+      "run_id": "R6",
+      "target": "FakeVsSatire",
+      "n_test_samples": 8,
+      "sample_ids": [
+        "FakeVsSatire:Fake/finalFake:105.txt",
+        "FakeVsSatire:Fake/finalFake:202.txt",
+        "FakeVsSatire:Fake/finalFake:332.txt",
+        "FakeVsSatire:Fake/finalFake:433.txt",
+        "FakeVsSatire:Fake/finalFake:92.txt",
+        "FakeVsSatire:Satire/finalSatire:280.txt",
+        "FakeVsSatire:Satire/finalSatire:467.txt",
+        "FakeVsSatire:Satire/finalSatire:87.txt"
+      ],
+      "prediction_labels_match": true,
+      "probabilities_within_tolerance": true,
+      "max_absolute_probability_difference": 9.47713851928711e-06,
+      "absolute_probability_tolerance": 0.005,
+      "reloaded_predictions": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "saved_predictions": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reloaded_probabilities": [
+        [
+          0.9986374974250793,
+          0.0013625064166262746
+        ],
+        [
+          0.9989125728607178,
+          0.0010874937288463116
+        ],
+        [
+          0.9989288449287415,
+          0.0010711270151659846
+        ],
+        [
+          0.9983972907066345,
+          0.0016027564415708184
+        ],
+        [
+          0.9888513684272766,
+          0.01114861760288477
+        ],
+        [
+          0.9989946484565735,
+          0.0010053853038698435
+        ],
+        [
+          0.9990679621696472,
+          0.0009320319513790309
+        ],
+        [
+          0.9989877343177795,
+          0.0010122822131961584
+        ]
+      ],
+      "saved_probabilities": [
+        [
+          0.9986383318901062,
+          0.0013617033837363124
+        ],
+        [
+          0.99891197681427,
+          0.0010880650952458382
+        ],
+        [
+          0.9989287257194519,
+          0.001071214210242033
+        ],
+        [
+          0.9983990788459778,
+          0.0016009644605219364
+        ],
+        [
+          0.9888418912887573,
+          0.011158030480146408
+        ],
+        [
+          0.9989935755729675,
+          0.0010063779773190618
+        ],
+        [
+          0.9990673661231995,
+          0.0009326359140686691
+        ],
+        [
+          0.9989877343177795,
+          0.0010122861713171005
+        ]
+      ],
+      "artifact_sha256": {
+        "results\\neural\\R6\\predictions.csv": "4b63ca6b84000291bea0f8966883a2d9b4b4b676374fa1375235e74dd02af640",
+        "checkpoints\\R6\\final\\model.safetensors": "8a949d8b73a230d8ad9f07d7f9ef93c35b551a42e27879811431b5e37a950a82",
+        "checkpoints\\R6\\final\\config.json": "3bd633e487bdcf3539ad9f1f1ab9b4449bb6e176f0fcead95eaf2d57ff92f927"
+      },
+      "status": "passed",
+      "inference_precision": "FP32; saved predictions used Trainer mixed FP16 evaluation",
+      "adapter_base_run": null
+    },
+    {
+      "run_id": "R7",
+      "target": "LIAR_PLUS",
+      "n_test_samples": 8,
+      "sample_ids": [
+        "LIAR_PLUS:10040.json",
+        "LIAR_PLUS:11832.json",
+        "LIAR_PLUS:13484.json",
+        "LIAR_PLUS:2911.json",
+        "LIAR_PLUS:4709.json",
+        "LIAR_PLUS:660.json",
+        "LIAR_PLUS:8192.json",
+        "LIAR_PLUS:9995.json"
+      ],
+      "prediction_labels_match": true,
+      "probabilities_within_tolerance": true,
+      "max_absolute_probability_difference": 0.00035941600799560547,
+      "absolute_probability_tolerance": 0.005,
+      "reloaded_predictions": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "saved_predictions": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "reloaded_probabilities": [
+        [
+          0.011915875598788261,
+          0.9880841374397278
+        ],
+        [
+          0.027503885328769684,
+          0.9724961519241333
+        ],
+        [
+          0.99302738904953,
+          0.00697258859872818
+        ],
+        [
+          0.0008481967379339039,
+          0.9991518259048462
+        ],
+        [
+          0.001067330245859921,
+          0.9989326596260071
+        ],
+        [
+          0.9997113347053528,
+          0.0002886091824620962
+        ],
+        [
+          0.03940768539905548,
+          0.9605923295021057
+        ],
+        [
+          0.004437651950865984,
+          0.9955623149871826
+        ]
+      ],
+      "saved_probabilities": [
+        [
+          0.011777842417359352,
+          0.9882221817970276
+        ],
+        [
+          0.02745460718870163,
+          0.9725454449653625
+        ],
+        [
+          0.9929881691932678,
+          0.007011794485151768
+        ],
+        [
+          0.000847589981276542,
+          0.999152421951294
+        ],
+        [
+          0.0010670424671843648,
+          0.9989328980445862
+        ],
+        [
+          0.9997108578681946,
+          0.0002891032490879297
+        ],
+        [
+          0.039048295468091965,
+          0.9609517455101013
+        ],
+        [
+          0.004425152204930782,
+          0.9955748319625854
+        ]
+      ],
+      "artifact_sha256": {
+        "results\\neural\\R7\\predictions.csv": "6d202f5a57782aa03dedd157e33d78da0bba0da1ff3de4247541bc2f0d227418",
+        "checkpoints\\R5\\final\\model.safetensors": "76cd785380a7b6b83d4f7efd0d405e279714532946619facb8371d15fe3ab710",
+        "checkpoints\\R7\\final\\adapter_model.safetensors": "4842764c35d960b2ba5810553b1dded3e7554770bf31b297cb9cdc1fd389ac0a",
+        "checkpoints\\R7\\final\\adapter_config.json": "e2d1e434a1fdad88c865affd6384448c511561623749840871b430f28ef2b487"
+      },
+      "status": "passed",
+      "inference_precision": "FP32; saved predictions used Trainer mixed FP16 evaluation",
+      "adapter_base_run": "R5"
+    },
+    {
+      "run_id": "R8",
+      "target": "FakeVsSatire",
+      "n_test_samples": 8,
+      "sample_ids": [
+        "FakeVsSatire:Fake/finalFake:105.txt",
+        "FakeVsSatire:Fake/finalFake:202.txt",
+        "FakeVsSatire:Fake/finalFake:332.txt",
+        "FakeVsSatire:Fake/finalFake:433.txt",
+        "FakeVsSatire:Fake/finalFake:92.txt",
+        "FakeVsSatire:Satire/finalSatire:280.txt",
+        "FakeVsSatire:Satire/finalSatire:467.txt",
+        "FakeVsSatire:Satire/finalSatire:87.txt"
+      ],
+      "prediction_labels_match": true,
+      "probabilities_within_tolerance": true,
+      "max_absolute_probability_difference": 0.00020104646682739258,
+      "absolute_probability_tolerance": 0.005,
+      "reloaded_predictions": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "saved_predictions": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reloaded_probabilities": [
+        [
+          0.9984153509140015,
+          0.0015846912283450365
+        ],
+        [
+          0.998747706413269,
+          0.0012523296754807234
+        ],
+        [
+          0.9987689852714539,
+          0.0012310006422922015
+        ],
+        [
+          0.9981776475906372,
+          0.0018223233055323362
+        ],
+        [
+          0.98589688539505,
+          0.014103100635111332
+        ],
+        [
+          0.9988551139831543,
+          0.0011448614532127976
+        ],
+        [
+          0.998938262462616,
+          0.0010617462685331702
+        ],
+        [
+          0.9988503456115723,
+          0.001149620278738439
+        ]
+      ],
+      "saved_probabilities": [
+        [
+          0.9984176158905029,
+          0.001582341967150569
+        ],
+        [
+          0.9987478256225586,
+          0.0012521495809778571
+        ],
+        [
+          0.9987719655036926,
+          0.0012279604561626911
+        ],
+        [
+          0.9981791973114014,
+          0.0018208295805379748
+        ],
+        [
+          0.9860979318618774,
+          0.013902057893574238
+        ],
+        [
+          0.9988553524017334,
+          0.0011446805438026786
+        ],
+        [
+          0.9989392161369324,
+          0.0010608151787891984
+        ],
+        [
+          0.9988508224487305,
+          0.0011491554323583841
+        ]
+      ],
+      "artifact_sha256": {
+        "results\\neural\\R8\\predictions.csv": "054eb2310d517607cd465fb92e77a0d9d1e87cb199d11fcbd476903ca2cef79c",
+        "checkpoints\\R6\\final\\model.safetensors": "8a949d8b73a230d8ad9f07d7f9ef93c35b551a42e27879811431b5e37a950a82",
+        "checkpoints\\R8\\final\\adapter_model.safetensors": "0880bc204df08cbf1d2d3d1da12137bfe7c3dfa6e97a065ae689d0240c25a6ef",
+        "checkpoints\\R8\\final\\adapter_config.json": "8d6a8209d959c0d0182312025bbee37d42d6ca4f0f02b1471c1eb263f863fc5c"
+      },
+      "status": "passed",
+      "inference_precision": "FP32; saved predictions used Trainer mixed FP16 evaluation",
+      "adapter_base_run": "R6"
+    },
+    {
+      "run_id": "R9",
+      "target": "LIAR_PLUS",
+      "n_test_samples": 8,
+      "sample_ids": [
+        "LIAR_PLUS:10040.json",
+        "LIAR_PLUS:11832.json",
+        "LIAR_PLUS:13484.json",
+        "LIAR_PLUS:2911.json",
+        "LIAR_PLUS:4709.json",
+        "LIAR_PLUS:660.json",
+        "LIAR_PLUS:8192.json",
+        "LIAR_PLUS:9995.json"
+      ],
+      "prediction_labels_match": true,
+      "probabilities_within_tolerance": true,
+      "max_absolute_probability_difference": 0.00025163963437080383,
+      "absolute_probability_tolerance": 0.005,
+      "reloaded_predictions": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "saved_predictions": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "reloaded_probabilities": [
+        [
+          0.011942763812839985,
+          0.9880572557449341
+        ],
+        [
+          0.029003478586673737,
+          0.9709965586662292
+        ],
+        [
+          0.9918351173400879,
+          0.008164878003299236
+        ],
+        [
+          0.0009387419559061527,
+          0.9990612864494324
+        ],
+        [
+          0.0011770486598834395,
+          0.9988229870796204
+        ],
+        [
+          0.999660849571228,
+          0.00033916530082933605
+        ],
+        [
+          0.03839407116174698,
+          0.961605966091156
+        ],
+        [
+          0.004768322687596083,
+          0.9952316880226135
+        ]
+      ],
+      "saved_probabilities": [
+        [
+          0.011892050504684448,
+          0.9881079792976379
+        ],
+        [
+          0.02898062765598297,
+          0.9710193276405334
+        ],
+        [
+          0.9917961359024048,
+          0.008203786797821522
+        ],
+        [
+          0.0009381115669384599,
+          0.9990618824958801
+        ],
+        [
+          0.0011763748480007052,
+          0.9988235831260681
+        ],
+        [
+          0.9996607303619385,
+          0.00033930179779417813
+        ],
+        [
+          0.038142431527376175,
+          0.9618575572967529
+        ],
+        [
+          0.004755199886858463,
+          0.9952448010444641
+        ]
+      ],
+      "artifact_sha256": {
+        "results\\neural\\R9\\predictions.csv": "1ff047e164ddfb9375c4fbb3bd34eef5d81c21d5ba3521432360e9e4921efd16",
+        "checkpoints\\R5\\final\\model.safetensors": "76cd785380a7b6b83d4f7efd0d405e279714532946619facb8371d15fe3ab710",
+        "checkpoints\\R9\\final\\adapter_model.safetensors": "8380812f587f7a50eddd7c02a88f81b4be6cc017d53ebd2e28ed0fc283db7418",
+        "checkpoints\\R9\\final\\adapter_config.json": "e2d1e434a1fdad88c865affd6384448c511561623749840871b430f28ef2b487"
+      },
+      "status": "passed",
+      "inference_precision": "FP32; saved predictions used Trainer mixed FP16 evaluation",
+      "adapter_base_run": "R5"
+    },
+    {
+      "run_id": "R10",
+      "target": "FakeVsSatire",
+      "n_test_samples": 8,
+      "sample_ids": [
+        "FakeVsSatire:Fake/finalFake:105.txt",
+        "FakeVsSatire:Fake/finalFake:202.txt",
+        "FakeVsSatire:Fake/finalFake:332.txt",
+        "FakeVsSatire:Fake/finalFake:433.txt",
+        "FakeVsSatire:Fake/finalFake:92.txt",
+        "FakeVsSatire:Satire/finalSatire:280.txt",
+        "FakeVsSatire:Satire/finalSatire:467.txt",
+        "FakeVsSatire:Satire/finalSatire:87.txt"
+      ],
+      "prediction_labels_match": true,
+      "probabilities_within_tolerance": true,
+      "max_absolute_probability_difference": 0.00025394000113010406,
+      "absolute_probability_tolerance": 0.005,
+      "reloaded_predictions": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "saved_predictions": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reloaded_probabilities": [
+        [
+          0.998314619064331,
+          0.001685433671809733
+        ],
+        [
+          0.9986644983291626,
+          0.0013355088885873556
+        ],
+        [
+          0.9986880421638489,
+          0.0013119126670062542
+        ],
+        [
+          0.9980664849281311,
+          0.0019335082033649087
+        ],
+        [
+          0.985709547996521,
+          0.014290510676801205
+        ],
+        [
+          0.998781144618988,
+          0.001218900317326188
+        ],
+        [
+          0.9988675117492676,
+          0.0011324681108817458
+        ],
+        [
+          0.9987738728523254,
+          0.001226153108291328
+        ]
+      ],
+      "saved_probabilities": [
+        [
+          0.9983189702033997,
+          0.001680941553786397
+        ],
+        [
+          0.9986646175384521,
+          0.0013354007387533784
+        ],
+        [
+          0.9986904263496399,
+          0.0013096056645736098
+        ],
+        [
+          0.9980695843696594,
+          0.0019304942106828094
+        ],
+        [
+          0.9859634041786194,
+          0.0140365706756711
+        ],
+        [
+          0.9987816214561462,
+          0.0012184162624180317
+        ],
+        [
+          0.9988664388656616,
+          0.0011335689341649413
+        ],
+        [
+          0.9987744688987732,
+          0.0012255675392225385
+        ]
+      ],
+      "artifact_sha256": {
+        "results\\neural\\R10\\predictions.csv": "a9fafb0d945d014000f744203d9c22c8c7308244b7c84e43f7907c664723e1b6",
+        "checkpoints\\R6\\final\\model.safetensors": "8a949d8b73a230d8ad9f07d7f9ef93c35b551a42e27879811431b5e37a950a82",
+        "checkpoints\\R10\\final\\adapter_model.safetensors": "ec18e86d7b96381ade9a155008034ff44dfbce7b7f679888bc9919283d622ce1",
+        "checkpoints\\R10\\final\\adapter_config.json": "8d6a8209d959c0d0182312025bbee37d42d6ca4f0f02b1471c1eb263f863fc5c"
+      },
+      "status": "passed",
+      "inference_precision": "FP32; saved predictions used Trainer mixed FP16 evaluation",
+      "adapter_base_run": "R6"
+    }
+  ]
+}

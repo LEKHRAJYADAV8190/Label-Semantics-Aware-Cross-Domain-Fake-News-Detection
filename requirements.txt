@@ -1,0 +1,8 @@
+# Install torch separately from https://download.pytorch.org/whl/cu126
+torch==2.7.1
+transformers==4.51.3
+peft==0.15.2
+accelerate==1.6.0
+scikit-learn==1.6.1
+numpy==2.2.5
+joblib==1.4.2

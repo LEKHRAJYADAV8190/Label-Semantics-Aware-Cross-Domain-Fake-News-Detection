@@ -1,0 +1,16 @@
+{
+  "dataset": "Infodemic",
+  "rows": 10697,
+  "splits": "official train/val/labeled-test",
+  "fake": 5098,
+  "real": 5599,
+  "output_sha256": "4bbb9300e74d11c974d2b4466d8a8a480bbd85e642ed791cecb1cb1d9ea90435",
+  "excluded": {
+    "duplicate_text": 3
+  },
+  "source": "CONSTRAINT 2021 English (diptamath/covid_fake_news)",
+  "mapping": {
+    "fake": 1,
+    "real": 0
+  }
+}

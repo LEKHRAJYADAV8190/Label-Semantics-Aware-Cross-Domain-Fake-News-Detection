@@ -1,0 +1,10 @@
+{
+  "analysis_complete": true,
+  "tables": 4,
+  "run_log_rows": 16,
+  "examples": 10,
+  "verification": "See independent_verification.json and model_reload_verification.json; separate checks must also pass.",
+  "remaining": [
+    "teacher submission archive"
+  ]
+}

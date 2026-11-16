@@ -1,0 +1,54 @@
+{
+  "run_id": "X_in_Fakes",
+  "family": "ten_dataset_extra",
+  "accuracy": 0.532051282051282,
+  "macro_f1": 0.3593248945147679,
+  "classification_report": {
+    "Real": {
+      "precision": 0.5324675324675324,
+      "recall": 0.9879518072289156,
+      "f1-score": 0.6919831223628692,
+      "support": 83.0
+    },
+    "Fake": {
+      "precision": 0.5,
+      "recall": 0.0136986301369863,
+      "f1-score": 0.02666666666666667,
+      "support": 73.0
+    },
+    "accuracy": 0.532051282051282,
+    "macro avg": {
+      "precision": 0.5162337662337662,
+      "recall": 0.5008252186829509,
+      "f1-score": 0.3593248945147679,
+      "support": 156.0
+    },
+    "weighted avg": {
+      "precision": 0.5172743922743922,
+      "recall": 0.532051282051282,
+      "f1-score": 0.38064913988964616,
+      "support": 156.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      82,
+      1
+    ],
+    [
+      72,
+      1
+    ]
+  ],
+  "n_test": 156,
+  "target": "Fakes",
+  "sources": [
+    "Fakes"
+  ],
+  "phase": "in_domain",
+  "method": "DistilBERT",
+  "n_train": 469,
+  "n_val": 156,
+  "train_seconds": 14.420712999999523,
+  "checkpoint": "C:\\ml\\fake-news-30\\checkpoints\\X_in_Fakes\\final"
+}

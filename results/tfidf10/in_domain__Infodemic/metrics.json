@@ -1,0 +1,59 @@
+{
+  "run_id": "in_domain__Infodemic",
+  "protocol": "in_domain",
+  "target": "Infodemic",
+  "sources": [
+    "Infodemic"
+  ],
+  "n_train": 6417,
+  "n_test": 2140,
+  "family": "ten_dataset_extra",
+  "fit_seconds": 0.6068706000223756,
+  "metrics": {
+    "test": {
+      "n": 2140,
+      "accuracy": 0.9299065420560748,
+      "macro_f1": 0.9296779909199171,
+      "confusion_matrix": [
+        [
+          1056,
+          64
+        ],
+        [
+          86,
+          934
+        ]
+      ],
+      "classification_report": {
+        "0": {
+          "precision": 0.9246935201401051,
+          "recall": 0.9428571428571428,
+          "f1-score": 0.9336870026525199,
+          "support": 1120.0
+        },
+        "1": {
+          "precision": 0.935871743486974,
+          "recall": 0.9156862745098039,
+          "f1-score": 0.9256689791873142,
+          "support": 1020.0
+        },
+        "accuracy": 0.9299065420560748,
+        "macro avg": {
+          "precision": 0.9302826318135395,
+          "recall": 0.9292717086834734,
+          "f1-score": 0.9296779909199171,
+          "support": 2140.0
+        },
+        "weighted avg": {
+          "precision": 0.9300214583708556,
+          "recall": 0.9299065420560748,
+          "f1-score": 0.9298653279167677,
+          "support": 2140.0
+        }
+      }
+    }
+  },
+  "train_dataset_counts": {
+    "Infodemic": 6417
+  }
+}

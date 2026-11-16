@@ -1,0 +1,59 @@
+{
+  "run_id": "in_domain__Fakes",
+  "protocol": "in_domain",
+  "target": "Fakes",
+  "sources": [
+    "Fakes"
+  ],
+  "n_train": 469,
+  "n_test": 156,
+  "family": "ten_dataset_extra",
+  "fit_seconds": 0.40152559999842197,
+  "metrics": {
+    "test": {
+      "n": 156,
+      "accuracy": 0.5576923076923077,
+      "macro_f1": 0.5135354996158539,
+      "confusion_matrix": [
+        [
+          67,
+          16
+        ],
+        [
+          53,
+          20
+        ]
+      ],
+      "classification_report": {
+        "0": {
+          "precision": 0.5583333333333333,
+          "recall": 0.8072289156626506,
+          "f1-score": 0.6600985221674877,
+          "support": 83.0
+        },
+        "1": {
+          "precision": 0.5555555555555556,
+          "recall": 0.273972602739726,
+          "f1-score": 0.3669724770642202,
+          "support": 73.0
+        },
+        "accuracy": 0.5576923076923077,
+        "macro avg": {
+          "precision": 0.5569444444444445,
+          "recall": 0.5406007592011883,
+          "f1-score": 0.5135354996158539,
+          "support": 156.0
+        },
+        "weighted avg": {
+          "precision": 0.5570334757834758,
+          "recall": 0.5576923076923077,
+          "f1-score": 0.5229305651640355,
+          "support": 156.0
+        }
+      }
+    }
+  },
+  "train_dataset_counts": {
+    "Fakes": 469
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "dataset": "Celebrity",
+  "rows": 500,
+  "splits": {
+    "train": {
+      "0": 150,
+      "1": 150
+    },
+    "val": {
+      "0": 50,
+      "1": 50
+    },
+    "test": {
+      "0": 50,
+      "1": 50
+    }
+  },
+  "fake": 250,
+  "real": 250,
+  "output_sha256": "800c810bdd3ecde2325160000a2d3e9760ea4e310c5ba81f6796d7b8774f0ca2",
+  "excluded": {},
+  "source": "Perez-Rosas UMich fakeNewsDatasets.zip celebrityDataset",
+  "mapping": {
+    "fake": 1,
+    "legit": 0
+  }
+}

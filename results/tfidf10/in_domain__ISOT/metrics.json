@@ -1,0 +1,59 @@
+{
+  "run_id": "in_domain__ISOT",
+  "protocol": "in_domain",
+  "target": "ISOT",
+  "sources": [
+    "ISOT"
+  ],
+  "n_train": 4200,
+  "n_test": 900,
+  "family": "ten_dataset_extra",
+  "fit_seconds": 3.9574220000067726,
+  "metrics": {
+    "test": {
+      "n": 900,
+      "accuracy": 0.9677777777777777,
+      "macro_f1": 0.9677729636155524,
+      "confusion_matrix": [
+        [
+          441,
+          9
+        ],
+        [
+          20,
+          430
+        ]
+      ],
+      "classification_report": {
+        "0": {
+          "precision": 0.9566160520607375,
+          "recall": 0.98,
+          "f1-score": 0.9681668496158068,
+          "support": 450.0
+        },
+        "1": {
+          "precision": 0.979498861047836,
+          "recall": 0.9555555555555556,
+          "f1-score": 0.9673790776152981,
+          "support": 450.0
+        },
+        "accuracy": 0.9677777777777777,
+        "macro avg": {
+          "precision": 0.9680574565542868,
+          "recall": 0.9677777777777778,
+          "f1-score": 0.9677729636155524,
+          "support": 900.0
+        },
+        "weighted avg": {
+          "precision": 0.9680574565542868,
+          "recall": 0.9677777777777777,
+          "f1-score": 0.9677729636155524,
+          "support": 900.0
+        }
+      }
+    }
+  },
+  "train_dataset_counts": {
+    "ISOT": 4200
+  }
+}

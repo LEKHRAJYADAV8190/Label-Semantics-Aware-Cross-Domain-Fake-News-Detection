@@ -1,0 +1,165 @@
+{
+  "run_id": "lodo__FakeVsSatire",
+  "model": "TF-IDF + LogisticRegression",
+  "protocol": "lodo",
+  "target": "FakeVsSatire",
+  "sources": [
+    "ISOT",
+    "LIAR_PLUS"
+  ],
+  "signature": {
+    "parameters": {
+      "seed": 42,
+      "ngram_range": [
+        1,
+        2
+      ],
+      "min_df": 2,
+      "max_features": 50000,
+      "sublinear_tf": true,
+      "lowercase": true,
+      "C": 1.0,
+      "solver": "liblinear",
+      "max_iter": 1000,
+      "class_weight": null
+    },
+    "processed_sha256": {
+      "ISOT": "b394b17963036936bfb1681edec6ac4953b71f49de28b21f13f938a7f9782b2b",
+      "LIAR_PLUS": "a8532724a2ff0e7e796eb3f066bd140ef3f4446e3dc865ae79bc0e91c3dd816d",
+      "FakeVsSatire": "5220b24f0696b99dddf7b6761736d55d6a798fc7562589076f99f7ad65764a53"
+    },
+    "script_sha256": "cc06507c73341b8ec6659ae1338a9ea334d1daa3b154a9bd26a542542ee412f8",
+    "sklearn_version": "1.6.1"
+  },
+  "completed_utc": "2026-10-06T18:00:18.691818+00:00",
+  "python_version": "3.12.14",
+  "n_train": 14408,
+  "train_label_counts": {
+    "1": 6569,
+    "0": 7839
+  },
+  "train_dataset_counts": {
+    "ISOT": 4200,
+    "LIAR_PLUS": 10208
+  },
+  "vocabulary_size": 50000,
+  "fit_seconds": 3.184570600045845,
+  "elapsed_seconds": 4.866039099986665,
+  "model_path": "C:\\ml\\fake-news-30\\results\\tfidf\\lodo__FakeVsSatire\\model.joblib",
+  "metrics": {
+    "validation": {
+      "n": 2184,
+      "accuracy": 0.7765567765567766,
+      "macro_f1": 0.7744716400931406,
+      "confusion_matrix": [
+        [
+          953,
+          165
+        ],
+        [
+          323,
+          743
+        ]
+      ],
+      "confusion_matrix_labels": [
+        0,
+        1
+      ],
+      "classification_report": {
+        "0": {
+          "precision": 0.7468652037617555,
+          "recall": 0.8524150268336315,
+          "f1-score": 0.7961570593149541,
+          "support": 1118.0
+        },
+        "1": {
+          "precision": 0.8182819383259912,
+          "recall": 0.6969981238273921,
+          "f1-score": 0.7527862208713273,
+          "support": 1066.0
+        },
+        "accuracy": 0.7765567765567766,
+        "macro avg": {
+          "precision": 0.7825735710438733,
+          "recall": 0.7747065753305118,
+          "f1-score": 0.7744716400931406,
+          "support": 2184.0
+        },
+        "weighted avg": {
+          "precision": 0.7817233718228705,
+          "recall": 0.7765567765567766,
+          "f1-score": 0.7749879595984219,
+          "support": 2184.0
+        }
+      }
+    },
+    "test": {
+      "n": 73,
+      "accuracy": 0.5753424657534246,
+      "macro_f1": 0.39313488871010993,
+      "confusion_matrix": [
+        [
+          1,
+          30
+        ],
+        [
+          1,
+          41
+        ]
+      ],
+      "confusion_matrix_labels": [
+        0,
+        1
+      ],
+      "classification_report": {
+        "0": {
+          "precision": 0.5,
+          "recall": 0.03225806451612903,
+          "f1-score": 0.06060606060606061,
+          "support": 31.0
+        },
+        "1": {
+          "precision": 0.5774647887323944,
+          "recall": 0.9761904761904762,
+          "f1-score": 0.7256637168141593,
+          "support": 42.0
+        },
+        "accuracy": 0.5753424657534246,
+        "macro avg": {
+          "precision": 0.5387323943661972,
+          "recall": 0.5042242703533026,
+          "f1-score": 0.39313488871010993,
+          "support": 73.0
+        },
+        "weighted avg": {
+          "precision": 0.5445687825583638,
+          "recall": 0.5753424657534246,
+          "f1-score": 0.44324197239702157,
+          "support": 73.0
+        }
+      }
+    }
+  },
+  "persistence_prediction_check": "passed",
+  "validation_role": "Report only; fixed hyperparameters, no selection or tuning.",
+  "label_semantics": {
+    "ISOT": {
+      "0": "Real",
+      "1": "Fake"
+    },
+    "LIAR_PLUS": {
+      "0": "half-true/mostly-true/true",
+      "1": "pants-fire/false/barely-true"
+    },
+    "FakeVsSatire": {
+      "0": "Satire",
+      "1": "Fake"
+    }
+  },
+  "leakage_checks": "All processed IDs and normalized exact texts unique globally; vectorizer fit only on train. Near duplicates not ruled out.",
+  "artifact_sha256": {
+    "model.joblib": "327cb9b4da0a0f859e7dcf789b910edc1c1093c1f5913209a520aefb3a1bf022",
+    "validation_predictions.csv": "5c5e60da9fc2b2f6cf53e012e9db7d9b917e759b92e5df2cfb08ec3b3f961257",
+    "test_predictions.csv": "155efde820439fad47c016f4c7d08890d93832acd118702f4f8eb34c64d2db00"
+  }
+}

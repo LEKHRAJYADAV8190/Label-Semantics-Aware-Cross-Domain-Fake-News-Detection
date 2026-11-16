@@ -1,0 +1,59 @@
+{
+  "run_id": "in_domain__LIAR_PLUS",
+  "protocol": "in_domain",
+  "target": "LIAR_PLUS",
+  "sources": [
+    "LIAR_PLUS"
+  ],
+  "n_train": 10208,
+  "n_test": 1267,
+  "family": "ten_dataset_extra",
+  "fit_seconds": 0.5628570999251679,
+  "metrics": {
+    "test": {
+      "n": 1267,
+      "accuracy": 0.6195737963693765,
+      "macro_f1": 0.5920678562076834,
+      "confusion_matrix": [
+        [
+          557,
+          157
+        ],
+        [
+          325,
+          228
+        ]
+      ],
+      "classification_report": {
+        "0": {
+          "precision": 0.6315192743764172,
+          "recall": 0.7801120448179272,
+          "f1-score": 0.6979949874686717,
+          "support": 714.0
+        },
+        "1": {
+          "precision": 0.5922077922077922,
+          "recall": 0.41229656419529837,
+          "f1-score": 0.4861407249466951,
+          "support": 553.0
+        },
+        "accuracy": 0.6195737963693765,
+        "macro avg": {
+          "precision": 0.6118635332921047,
+          "recall": 0.5962043045066128,
+          "f1-score": 0.5920678562076834,
+          "support": 1267.0
+        },
+        "weighted avg": {
+          "precision": 0.6143612241481223,
+          "recall": 0.6195737963693765,
+          "f1-score": 0.6055282099038312,
+          "support": 1267.0
+        }
+      }
+    }
+  },
+  "train_dataset_counts": {
+    "LIAR_PLUS": 10208
+  }
+}

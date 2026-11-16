@@ -1,0 +1,71 @@
+{
+  "run_id": "R3",
+  "target": "FakeVsSatire",
+  "sources": [
+    "FakeVsSatire"
+  ],
+  "method": "DistilBERT",
+  "K": null,
+  "n_train": 334,
+  "n_test": 73,
+  "accuracy": 0.7534246575342466,
+  "macro_f1": 0.7311783960720131,
+  "classification_report": {
+    "Real": {
+      "precision": 0.8095238095238095,
+      "recall": 0.5483870967741935,
+      "f1-score": 0.6538461538461539,
+      "support": 31.0
+    },
+    "Fake": {
+      "precision": 0.7307692307692307,
+      "recall": 0.9047619047619048,
+      "f1-score": 0.8085106382978723,
+      "support": 42.0
+    },
+    "accuracy": 0.7534246575342466,
+    "macro avg": {
+      "precision": 0.7701465201465201,
+      "recall": 0.7265745007680491,
+      "f1-score": 0.7311783960720131,
+      "support": 73.0
+    },
+    "weighted avg": {
+      "precision": 0.7642129559937778,
+      "recall": 0.7534246575342466,
+      "f1-score": 0.7428311996950878,
+      "support": 73.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      17,
+      14
+    ],
+    [
+      4,
+      38
+    ]
+  ],
+  "checkpoint": "C:\\ml\\fake-news-30\\checkpoints\\R3\\final",
+  "train_seconds_this_invocation": 9.713125700014643,
+  "best_checkpoint": null,
+  "resumed_from": null,
+  "signature": {
+    "data_sha256": {
+      "ISOT": "b394b17963036936bfb1681edec6ac4953b71f49de28b21f13f938a7f9782b2b",
+      "LIAR_PLUS": "a8532724a2ff0e7e796eb3f066bd140ef3f4446e3dc865ae79bc0e91c3dd816d",
+      "FakeVsSatire": "5220b24f0696b99dddf7b6761736d55d6a798fc7562589076f99f7ad65764a53"
+    },
+    "batch": 4,
+    "max_len": 128,
+    "epochs": 2,
+    "seed": 42,
+    "lr": 2e-05,
+    "adaptation": null,
+    "sources": [
+      "FakeVsSatire"
+    ],
+    "target": "FakeVsSatire"
+  }
+}

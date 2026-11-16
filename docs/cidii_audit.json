@@ -1,0 +1,29 @@
+{
+  "dataset": "Cidii",
+  "rows": 719,
+  "splits": {
+    "train": {
+      "0": 253,
+      "1": 178
+    },
+    "val": {
+      "0": 84,
+      "1": 59
+    },
+    "test": {
+      "0": 85,
+      "1": 60
+    }
+  },
+  "fake": 297,
+  "real": 422,
+  "output_sha256": "4945216d17858345c6358978d47a0a16f3c5cf338565e96c711d42e5eef75a7d",
+  "excluded": {
+    "duplicate_text": 3
+  },
+  "source": "Kaggle suhaibkhalil/cidii-dataset (CIDII Dataset.csv, TSV)",
+  "mapping": {
+    "Disinformation": 1,
+    "Real Information": 0
+  }
+}

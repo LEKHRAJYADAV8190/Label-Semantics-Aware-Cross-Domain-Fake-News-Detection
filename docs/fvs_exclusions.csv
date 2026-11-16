@@ -1,0 +1,9 @@
+id,reason,kept_id
+FakeVsSatire:Fake/finalFake:313.txt,duplicate_text,FakeVsSatire:Fake/finalFake:156.txt
+FakeVsSatire:Fake/finalFake:82.txt,duplicate_text,FakeVsSatire:Fake/finalFake:158.txt
+FakeVsSatire:Fake/finalFake:159.txt,conflicting_text_labels,
+FakeVsSatire:Satire/finalSatire:593.txt,conflicting_text_labels,
+FakeVsSatire:Fake/finalFake:586.txt,duplicate_text,FakeVsSatire:Fake/finalFake:219.txt
+FakeVsSatire:Fake/finalFake:539.txt,duplicate_text,FakeVsSatire:Fake/finalFake:393.txt
+FakeVsSatire:Fake/finalFake:538.txt,duplicate_text,FakeVsSatire:Fake/finalFake:51.txt
+FakeVsSatire:Fake/finalFake:542.txt,duplicate_text,FakeVsSatire:Fake/finalFake:52.txt

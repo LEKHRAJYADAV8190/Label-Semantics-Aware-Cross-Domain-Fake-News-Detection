@@ -1,0 +1,22 @@
+{
+  "checked_date_local": "2026-10-06",
+  "timezone": "Asia/Calcutta",
+  "cpu": "13th Gen Intel Core i7-13700HX",
+  "physical_cores": 16,
+  "logical_processors": 24,
+  "ram_bytes": 16886128640,
+  "gpu": "NVIDIA GeForce RTX 4050 Laptop GPU",
+  "vram_total_mib": 6141,
+  "vram_free_mib_at_check": 5542,
+  "nvidia_driver": "617.14",
+  "vram_source": "nvidia-smi; Win32_VideoController AdapterRAM is unreliable above 4 GB",
+  "training_packages_in_checked_python": {
+    "torch": false,
+    "transformers": false,
+    "peft": false,
+    "sklearn": false
+  },
+  "cuda_training_tested": false,
+  "training_benchmark_run": false,
+  "note": "Actual hardware differs from the older uploaded guide. Other Python environments were not inventoried."
+}

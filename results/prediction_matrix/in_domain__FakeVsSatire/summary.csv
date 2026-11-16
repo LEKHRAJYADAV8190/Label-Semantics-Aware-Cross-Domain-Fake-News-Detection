@@ -1,0 +1,7 @@
+run_id,protocol,target,n_train,n_validation,n_test,validation_macro_f1,test_macro_f1,test_accuracy,fit_seconds,model_path
+in_domain__ISOT,in_domain,ISOT,4200,900,900,0.964444268860587,0.9677729636155524,0.9677777777777777,2.645191099960357,C:\ml\fake-news-30\results\tfidf\in_domain__ISOT\model.joblib
+in_domain__LIAR_PLUS,in_domain,LIAR_PLUS,10208,1284,1267,0.6161856579160039,0.5920678562076834,0.6195737963693765,0.3236460000043735,C:\ml\fake-news-30\results\tfidf\in_domain__LIAR_PLUS\model.joblib
+in_domain__FakeVsSatire,in_domain,FakeVsSatire,334,71,73,0.6288274831964152,0.5867924528301887,0.6712328767123288,0.22306649992242455,C:\ml\fake-news-30\results\tfidf\in_domain__FakeVsSatire\model.joblib
+lodo__ISOT,lodo,ISOT,10542,1355,900,0.6218084985370407,0.5970377499600015,0.5988888888888889,0.596985200070776,C:\ml\fake-news-30\results\tfidf\lodo__ISOT\model.joblib
+lodo__LIAR_PLUS,lodo,LIAR_PLUS,4534,971,1267,0.9443375796178344,0.5320265731477268,0.5438042620363063,3.141431999974884,C:\ml\fake-news-30\results\tfidf\lodo__LIAR_PLUS\model.joblib
+lodo__FakeVsSatire,lodo,FakeVsSatire,14408,2184,73,0.7744716400931406,0.39313488871010993,0.5753424657534246,3.184570600045845,C:\ml\fake-news-30\results\tfidf\lodo__FakeVsSatire\model.joblib
