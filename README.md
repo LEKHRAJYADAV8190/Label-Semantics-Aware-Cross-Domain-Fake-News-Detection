@@ -90,19 +90,9 @@ Cleaning is done by [`scripts/process_step1.py`](scripts/process_step1.py) and [
 
 ## 6. Method
 
-```mermaid
-flowchart LR
-    A[Raw datasets] --> B[Clean, deduplicate, split<br/>process_step1.py, process_fvs.py]
-    B --> C[TF-IDF + logistic regression<br/>train_tfidf.py, scikit-learn]
-    B --> D[DistilBERT R1-R6<br/>train_neural.py, Transformers]
-    D --> E[K=16 LoRA R7-R10<br/>train_neural.py, PEFT]
-    C --> F[Saved predictions<br/>and metrics.json]
-    D --> F
-    E --> F
-    F --> G[Tables, abstention, figures<br/>analyze_results.py]
-    B --> H[Nine-source LODO<br/>train_lodo10.py]
-    H --> G
-```
+![System pipeline](paper/figures/fig1_pipeline.png)
+
+*System pipeline. Each box names the stage and the program that runs it. Dashed boxes mark the extra nine-source run.*
 
 ### Evaluation protocols
 

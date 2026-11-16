@@ -49,25 +49,8 @@ Figure~\ref{fig:pipeline} shows the path from a raw file to a saved score. Each 
 
 \begin{figure}[t]
 \centering
-\begin{tikzpicture}[
-  node distance=2.2mm,
-  box/.style={draw, rounded corners, align=center, font=\scriptsize,
-              inner sep=2.2pt, text width=0.92\columnwidth},
-  arr/.style={-{Latex}, thick}
-]
-\node[box] (raw) {Raw files\\ ISOT CSV, LIAR-PLUS TSV, Fake-versus-Satire text};
-\node[box, below=of raw] (prep) {Clean, map labels, drop exact duplicates, assign splits\\ \texttt{process\_step1.py}, \texttt{process\_fvs.py}};
-\node[box, below=of prep] (csv) {Processed rows: id, text, label, dataset, split\\ \texttt{data/processed/*.csv}};
-\node[box, below=of csv] (models) {TF-IDF + logistic regression (\texttt{train\_tfidf.py}, scikit-learn)\\ DistilBERT (\texttt{train\_neural.py}, Transformers)\\ K=16 LoRA (\texttt{train\_neural.py}, PEFT)};
-\node[box, below=of models] (pred) {Saved test predictions and metric files\\ \texttt{results/tfidf}, \texttt{results/neural/R*}};
-\node[box, below=of pred] (score) {Macro-F1, accuracy, abstention tables\\ \texttt{analyze\_results.py} on saved predictions};
-\draw[arr] (raw) -- (prep);
-\draw[arr] (prep) -- (csv);
-\draw[arr] (csv) -- (models);
-\draw[arr] (models) -- (pred);
-\draw[arr] (pred) -- (score);
-\end{tikzpicture}
-\caption{Pipeline from raw files to saved scores. Preparation scripts do not compute macro-F1. The analysis script does not train.}
+\includegraphics[width=\columnwidth]{figures/fig1_pipeline.png}
+\caption{System pipeline. Each box names the stage and the program that runs it. Dashed boxes mark the extra nine-source run.}
 \label{fig:pipeline}
 \end{figure}
 
